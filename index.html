@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>紫微斗數悟（誤）我十八年｜讀後手記</title>
+<template id="__bundler_thumbnail" data-bg-color="#f4efe5">
+  <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="300" fill="#f4efe5"/>
+    <rect x="30" y="30" width="3" height="240" fill="#b83a24"/>
+    <text x="55" y="90" font-family="serif" font-size="32" font-weight="bold" fill="#1a1510">讀後手記</text>
+    <text x="55" y="125" font-family="serif" font-size="13" fill="#867b6e">紫微斗數悟（誤）我十八年</text>
+    <line x1="55" y1="145" x2="340" y2="145" stroke="#e6dfd0" stroke-width="1"/>
+    <text x="55" y="175" font-family="sans-serif" font-size="11" fill="#b83a24">第一章｜什麼是紫微斗數</text>
+    <text x="55" y="197" font-family="sans-serif" font-size="11" fill="#b83a24">第二章｜宇宙的程式</text>
+    <text x="55" y="219" font-family="sans-serif" font-size="11" fill="#b83a24">第三章｜太陽的語言</text>
+    <text x="55" y="241" font-family="sans-serif" font-size="11" fill="#b83a24">第四章｜月亮的語言</text>
+    <text x="55" y="263" font-family="sans-serif" font-size="11" fill="#b83a24">第五章｜你的命盤怎麼算</text>
+    <text x="290" y="285" font-family="sans-serif" font-size="10" fill="#867b6e">鄭菀之</text>
+  </svg>
+</template>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;600;700&family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f4efe5;--paper2:#ede7da;--paper3:#e6dfd0;
+  --ink:#1a1510;--ink-mid:#4a4237;--ink-lt:#867b6e;
+  --red:#b83a24;--red-lt:rgba(184,58,36,.07);
+  --gold:#9a7518;--border:rgba(26,21,16,.1);--sidebar-w:230px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:'Noto Serif TC',serif;font-size:16px;line-height:2;display:flex;min-height:100vh}
+/* SIDEBAR */
+#sidebar{position:fixed;top:0;left:0;bottom:0;width:var(--sidebar-w);background:var(--paper2);border-right:1px solid var(--border);overflow-y:auto;z-index:200;display:flex;flex-direction:column;transition:transform .3s}
+#sidebar::-webkit-scrollbar{width:3px}
+#sidebar::-webkit-scrollbar-thumb{background:var(--border)}
+.sb-brand{padding:1.8rem 1.5rem 1.2rem;border-bottom:1px solid var(--border)}
+.sb-title{font-size:.8rem;font-weight:600;letter-spacing:.05em;color:var(--ink-mid);line-height:1.5}
+.sb-sub{font-family:'Noto Sans TC',sans-serif;font-size:.62rem;color:var(--ink-lt);letter-spacing:.15em;margin-top:.25rem}
+.sb-nav{padding:.8rem 0 2rem;flex:1}
+.nav-grp{font-family:'Noto Sans TC',sans-serif;font-size:.58rem;letter-spacing:.35em;color:var(--ink-lt);padding:.6rem 1.5rem .2rem}
+.nav-item{display:block;padding:.38rem 1.5rem .38rem 1.8rem;font-family:'Noto Sans TC',sans-serif;font-size:.76rem;color:var(--ink-mid);text-decoration:none;border-left:2px solid transparent;transition:all .2s;line-height:1.5;cursor:pointer}
+.nav-item:hover{color:var(--ink);border-left-color:var(--border)}
+.nav-item.active{color:var(--red);border-left-color:var(--red);background:var(--red-lt)}
+.nav-sub{padding:.25rem 1.5rem .25rem 2.4rem;font-size:.7rem;color:var(--ink-lt);font-family:'Noto Sans TC',sans-serif;text-decoration:none;display:block;transition:color .2s;line-height:1.4;cursor:pointer}
+.nav-sub:hover{color:var(--red)}
+/* MAIN */
+#main{margin-left:var(--sidebar-w);flex:1;max-width:calc(100% - var(--sidebar-w))}
+/* COVER */
+#cover{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:4rem 2rem;position:relative;overflow:hidden;border-bottom:1px solid var(--border)}
+.wash{position:absolute;border-radius:50%;pointer-events:none}
+.wash1{top:-10%;right:-5%;width:480px;height:480px;background:radial-gradient(ellipse,rgba(154,117,24,.06),rgba(184,58,36,.04) 40%,transparent 70%)}
+.wash2{bottom:-15%;left:-10%;width:360px;height:360px;background:radial-gradient(ellipse,rgba(26,21,16,.05),transparent 65%)}
+.c-eyebrow{font-family:'Noto Sans TC',sans-serif;font-size:.68rem;letter-spacing:.4em;color:var(--ink-lt);margin-bottom:2.5rem}
+.c-stroke{width:36px;height:1.5px;background:var(--red);margin:0 auto 1.8rem;position:relative}
+.c-stroke::after{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:6px;height:6px;border-radius:50%;background:var(--red)}
+.c-title{font-size:clamp(2.8rem,5.5vw,4.6rem);font-weight:700;letter-spacing:.12em;line-height:1.2;color:var(--ink)}
+.c-div{width:50px;height:1px;background:linear-gradient(to right,transparent,var(--border),transparent);margin:1.8rem auto}
+.c-book{font-size:clamp(.95rem,1.8vw,1.2rem);font-weight:600;letter-spacing:.08em;color:var(--ink-mid)}
+.c-auth{font-family:'Noto Sans TC',sans-serif;font-size:.72rem;color:var(--ink-lt);letter-spacing:.12em;margin-top:.4rem}
+.c-writer{font-family:'Noto Sans TC',sans-serif;font-size:.75rem;letter-spacing:.2em;color:var(--ink-lt);margin-top:1.8rem}
+.c-writer strong{color:var(--ink-mid)}
+.c-hint{position:absolute;bottom:2rem;font-family:'Noto Sans TC',sans-serif;font-size:.62rem;letter-spacing:.2em;color:var(--ink-lt);display:flex;flex-direction:column;align-items:center;gap:.5rem}
+.hint-ln{width:1px;height:32px;background:linear-gradient(to bottom,var(--ink-lt),transparent)}
+/* SECTIONS */
+.sec-wrap{max-width:720px;margin:0 auto;padding:5rem 2.5rem;border-bottom:1px solid var(--border)}
+.sec-wrap.alt{background:var(--paper2)}
+/* CH HEADER */
+.ch-hd{margin-bottom:3rem}
+.ch-num{font-family:'Noto Sans TC',sans-serif;font-size:.62rem;letter-spacing:.4em;color:var(--red);margin-bottom:.9rem;display:flex;align-items:center;gap:.8rem}
+.ch-num::after{content:'';flex:1;height:1px;background:linear-gradient(to right,var(--red-lt),transparent);max-width:80px}
+.ch-title{font-size:clamp(1.8rem,3.5vw,2.6rem);font-weight:700;letter-spacing:.05em;line-height:1.25}
+.ch-sub{margin-top:.8rem;font-weight:300;font-size:.92rem;color:var(--ink-lt)}
+.ch-rule{margin-top:1.3rem;display:flex;align-items:center;gap:.8rem}
+.rule-line{height:1px;width:40px;background:var(--border)}
+.rule-dot{width:4px;height:4px;border-radius:50%;background:var(--red);opacity:.6}
+/* BLOCKS */
+.blk{margin-bottom:2.8rem}
+.blk-title{font-size:1.02rem;font-weight:600;color:var(--ink);margin-bottom:.9rem;display:flex;align-items:flex-start;gap:.55rem;letter-spacing:.03em}
+.blk-title::before{content:'';display:block;width:3px;min-height:1.1em;margin-top:.16em;background:var(--red);border-radius:2px;flex-shrink:0}
+p{margin-bottom:.8rem}p:last-child{margin-bottom:0}
+/* PANBANG */
+.pb{margin:2.5rem 0;border-left:3px solid var(--red);background:var(--red-lt);padding:1.5rem 1.8rem}
+.pb-stamp{display:inline-flex;align-items:center;gap:.4rem;border:1px solid var(--red);color:var(--red);font-family:'Noto Sans TC',sans-serif;font-size:.62rem;letter-spacing:.25em;padding:.18em .8em;margin-bottom:.8rem}
+.pb-head{font-size:1rem;font-weight:600;color:var(--ink);margin-bottom:.5rem;line-height:1.6}
+.pb p{font-size:.9rem;color:var(--ink-mid)}
+.pb strong{color:var(--red)}
+/* TABLES */
+.tbl{overflow-x:auto;margin:1.2rem 0}
+table{width:100%;border-collapse:collapse;font-family:'Noto Sans TC',sans-serif;font-size:.82rem}
+th{background:var(--paper3);color:var(--ink-mid);font-weight:500;padding:.55rem .9rem;text-align:left;border-bottom:1.5px solid var(--border);white-space:nowrap}
+td{padding:.5rem .9rem;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.7}
+tr:last-child td{border-bottom:none}
+.td-k{font-weight:600;color:var(--ink);white-space:nowrap}
+.td-r{color:var(--red);font-weight:600}
+.td-g{color:var(--gold);font-weight:600}
+/* CALLOUT */
+.box{background:var(--paper2);border:1px solid var(--border);padding:1.2rem 1.5rem;margin:1.2rem 0;font-family:'Noto Sans TC',sans-serif;font-size:.875rem;line-height:1.9}
+.box .red{color:var(--red)}.box .gold{color:var(--gold)}
+.qt{border-left:2px solid var(--border);padding:.5rem 0 .5rem 1.2rem;color:var(--ink-lt);margin:1rem 0;font-size:.9rem;font-style:italic}
+.warn{background:var(--paper3);border:1px solid var(--border);border-left:3px solid var(--gold);padding:1rem 1.3rem;margin:1rem 0;font-family:'Noto Sans TC',sans-serif;font-size:.82rem;color:var(--ink-mid)}
+.warn .lbl{font-size:.6rem;letter-spacing:.2em;color:var(--gold);margin-bottom:.3rem}
+/* GRID */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.8rem;margin:1.2rem 0}
+.card{background:var(--paper2);border:1px solid var(--border);padding:.9rem 1.1rem}
+.card-lbl{font-family:'Noto Sans TC',sans-serif;font-size:.6rem;letter-spacing:.2em;color:var(--ink-lt);margin-bottom:.3rem}
+.card-val{font-size:1.05rem;font-weight:600;color:var(--ink)}
+.card-desc{font-size:.78rem;color:var(--ink-lt);margin-top:.3rem;line-height:1.6}
+/* DIAGRAM */
+.dg{margin:2rem 0;display:flex;flex-direction:column;align-items:center;gap:.6rem}
+.dg-cap{font-family:'Noto Sans TC',sans-serif;font-size:.72rem;color:var(--ink-lt);letter-spacing:.1em;text-align:center}
+.dg svg{max-width:100%;height:auto}
+/* SIHUA */
+.sihua{display:grid;grid-template-columns:repeat(4,1fr);gap:.7rem;margin:1.2rem 0}
+.sh{background:var(--paper2);border:1px solid var(--border);padding:.9rem .7rem;text-align:center;border-top:2px solid transparent}
+.sh-lu{border-top-color:#a07820}.sh-quan{border-top-color:#9a3020}.sh-ke{border-top-color:#2a7090}.sh-ji{border-top-color:#6a6460}
+.sh-num{font-size:1.8rem;font-weight:300;color:var(--ink-lt);line-height:1}
+.sh-name{font-size:1.1rem;font-weight:700;margin:.2rem 0}
+.sh-lu .sh-name{color:#a07820}.sh-quan .sh-name{color:#9a3020}.sh-ke .sh-name{color:#2a7090}.sh-ji .sh-name{color:#6a6460}
+.sh-desc{font-family:'Noto Sans TC',sans-serif;font-size:.68rem;color:var(--ink-lt);line-height:1.5}
+/* TIGERS */
+.tigers{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:.7rem;margin:1.2rem 0}
+.tc{background:var(--paper2);border:1px solid var(--border);padding:.9rem .8rem;text-align:center}
+.tc-year{font-family:'Noto Sans TC',sans-serif;font-size:.62rem;color:var(--ink-lt);margin-bottom:.3rem}
+.tc-res{font-size:1.4rem;font-weight:700;color:var(--ink);letter-spacing:.1em}
+.tc-rule{font-size:.62rem;color:var(--ink-lt);margin-top:.25rem;font-style:italic}
+/* SOLAR */
+.solar{display:grid;grid-template-columns:repeat(2,1fr);gap:.4rem;margin:1.2rem 0}
+.solar-item{background:var(--paper2);border:1px solid var(--border);padding:.45rem .9rem;display:flex;justify-content:space-between;align-items:center;font-family:'Noto Sans TC',sans-serif;font-size:.78rem}
+.jie{color:var(--ink-mid)}.zhong{color:var(--gold)}
+/* INTERACTIVE MOON */
+.moon-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem;margin:1.5rem 0}
+.moon-card{background:var(--paper2);border:1.5px solid var(--border);padding:1rem .8rem;text-align:center;cursor:pointer;transition:all .2s;position:relative}
+.moon-card:hover,.moon-card.active{border-color:var(--gold);background:rgba(154,117,24,.06)}
+.moon-card.active::after{content:'▼';position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);font-size:.5rem;color:var(--gold)}
+.moon-ico{font-size:1.8rem;display:block;margin-bottom:.3rem}
+.moon-date{font-family:'Noto Sans TC',sans-serif;font-size:.6rem;color:var(--ink-lt)}
+.moon-name{font-size:.85rem;font-weight:600;margin:.15rem 0}
+.moon-gua{font-size:.75rem;color:var(--ink-lt)}
+.moon-tian{font-size:.7rem;color:var(--gold);margin-top:.1rem}
+.moon-detail{display:none;background:rgba(154,117,24,.06);border:1px solid rgba(154,117,24,.3);padding:1.2rem 1.5rem;margin-top:.5rem;font-family:'Noto Sans TC',sans-serif;font-size:.82rem;line-height:1.8;color:var(--ink-mid)}
+.moon-detail.show{display:block}
+.moon-detail strong{color:var(--ink)}
+/* TOC */
+.toc-item{display:flex;justify-content:space-between;align-items:center;padding:.65rem 0;border-bottom:1px solid var(--border);text-decoration:none;color:var(--ink);font-size:.88rem}
+.toc-item:last-child{border-bottom:none}
+.toc-item:hover{color:var(--red)}
+.toc-tag{color:var(--red);margin-right:.8rem;font-family:'Noto Sans TC',sans-serif;font-size:.72rem}
+.toc-arr{color:var(--ink-lt);font-family:'Noto Sans TC',sans-serif;font-size:.72rem}
+/* LOOP */
+.loop-step{display:flex;gap:1.2rem;align-items:flex-start;opacity:0;transform:translateY(10px);transition:opacity .5s,transform .5s}
+.loop-step.vis{opacity:1;transform:none}
+.loop-col{display:flex;flex-direction:column;align-items:center;flex-shrink:0;width:20px}
+.loop-dot{width:10px;height:10px;border-radius:50%;border:1.5px solid var(--red);background:var(--paper);margin-top:.45rem;flex-shrink:0;transition:background .4s}
+.loop-step.vis .loop-dot{background:var(--red)}
+.loop-conn{width:1px;flex:1;min-height:2rem;background:linear-gradient(to bottom,rgba(184,58,36,.3),transparent);margin-top:2px}
+.loop-body{padding-bottom:2rem}
+.loop-lbl{font-family:'Noto Sans TC',sans-serif;font-size:.6rem;letter-spacing:.25em;color:var(--red);margin-bottom:.2rem}
+.loop-text{font-size:1rem;font-weight:600;color:var(--ink)}
+.loop-sub{font-size:.82rem;color:var(--ink-lt);margin-top:.2rem;line-height:1.7}
+/* ANIM */
+.fi{opacity:0;transform:translateY(16px);transition:opacity .6s,transform .6s}
+.fi.vis{opacity:1;transform:none}
+#prog{position:fixed;top:0;left:var(--sidebar-w);right:0;height:2px;background:linear-gradient(to right,var(--red),var(--gold));z-index:999;transform-origin:left;transform:scaleX(0);transition:transform .1s}
+#mbtn{display:none;position:fixed;top:.9rem;left:.9rem;z-index:300;background:var(--paper);border:1px solid var(--border);padding:.45rem .65rem;cursor:pointer;font-size:1rem}
+#ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.3);z-index:150}
+@media(max-width:768px){
+  #sidebar{transform:translateX(-100%)}
+  #sidebar.open{transform:translateX(0)}
+  #main{margin-left:0;max-width:100%}
+  #prog{left:0}
+  #mbtn{display:block}
+  #ov.open{display:block}
+  .sec-wrap{padding:3.5rem 1.2rem}
+  .sihua{grid-template-columns:repeat(2,1fr)}
+  .solar{grid-template-columns:1fr}
+  .moon-grid{grid-template-columns:repeat(2,1fr)}
+}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<button id="mbtn">☰</button>
+<div id="ov"></div>
+
+<!-- SIDEBAR -->
+<nav id="sidebar">
+  <div class="sb-brand">
+    <div class="sb-title">紫微斗數<br>悟（誤）我十八年</div>
+    <div class="sb-sub">鄭菀之・讀後手記</div>
+  </div>
+  <div class="sb-nav">
+    <div class="nav-grp">書名</div>
+    <a class="nav-item" href="#cover">封面</a>
+    <a class="nav-item" href="#toc">目次</a>
+    <div class="nav-grp" style="margin-top:.5rem">諸緒</div>
+    <a class="nav-item" href="#ch1">第一章｜什麼是紫微斗數</a>
+    <a class="nav-sub" href="#ch1-name">天罡罫的名字</a>
+    <a class="nav-sub" href="#ch1-chain">架構鏈</a>
+    <a class="nav-sub" href="#ch1-ming">命是可以造的</a>
+    <a class="nav-sub" href="#ch1-shu">「數」的本質</a>
+    <a class="nav-item" href="#ch2">第二章｜宇宙的程式</a>
+    <a class="nav-sub" href="#ch2-hetu">河圖</a>
+    <a class="nav-sub" href="#ch2-pair">配對規則</a>
+    <a class="nav-sub" href="#ch2-obs">觀象根源</a>
+    <a class="nav-sub" href="#ch2-luo">洛書 vs 河圖</a>
+    <a class="nav-item" href="#ch3">第三章｜太陽的語言</a>
+    <a class="nav-sub" href="#ch3-li">三種曆法</a>
+    <a class="nav-sub" href="#ch3-ji">四季與節氣</a>
+    <a class="nav-sub" href="#ch3-yin">建月在寅</a>
+    <a class="nav-sub" href="#ch3-run">閏月的來源</a>
+    <a class="nav-item" href="#ch4">第四章｜月亮的語言</a>
+    <a class="nav-sub" href="#ch4-mother">月亮是四化之母</a>
+    <a class="nav-sub" href="#ch4-najia">月體納甲（互動）</a>
+    <a class="nav-sub" href="#ch4-sihua">四化的數字根源</a>
+    <a class="nav-sub" href="#ch4-myy">命、性、運</a>
+    <a class="nav-item" href="#ch5">第五章｜你的命盤怎麼算</a>
+    <a class="nav-sub" href="#ch5-tiger">五虎遁</a>
+    <a class="nav-sub" href="#ch5-nayin">納音</a>
+    <a class="nav-sub" href="#ch5-stars">紫微系與天府系</a>
+    <a class="nav-sub" href="#ch5-zi">子時換日</a>
+    <a class="nav-item" href="#epilogue">結語｜諸緒的收攏</a>
+    <a class="nav-sub" href="#wuhudun">五虎遁完整歸納</a>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<main id="main">
+
+<!-- 封面 -->
+<section id="cover" style="min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:4rem 2rem;position:relative;overflow:hidden;border-bottom:1px solid var(--border)">
+  <div class="wash wash1"></div>
+  <div class="wash wash2"></div>
+  <div style="position:relative;z-index:2">
+    <div class="c-eyebrow">讀　後　手　記</div>
+    <div class="c-stroke"></div>
+    <h1 class="c-title">讀後手記</h1>
+    <div class="c-div"></div>
+    <div style="font-family:'Noto Sans TC',sans-serif;font-size:.7rem;letter-spacing:.2em;color:var(--ink-lt);margin-bottom:.5rem">讀</div>
+    <div class="c-book">紫微斗數悟（誤）我十八年</div>
+    <div class="c-auth">蔡明宏・欽天門第三十六代傳人　著</div>
+    <div class="c-div"></div>
+    <div class="c-writer">筆記整理｜<strong>鄭菀之</strong></div>
+  </div>
+  <div class="c-hint"><span>往下閱讀</span><div class="hint-ln"></div></div>
+</section>
+
+<!-- 目次 -->
+<section id="toc" class="sec-wrap">
+  <div class="ch-hd fi">
+    <div class="ch-num">目次</div>
+    <h2 class="ch-title">Table of Contents</h2>
+  </div>
+  <div class="fi" style="border-top:1px solid var(--border)">
+    <a class="toc-item" href="#ch1"><span><span class="toc-tag">第一章</span>什麼是紫微斗數</span><span class="toc-arr">→</span></a>
+    <a class="toc-item" href="#ch2"><span><span class="toc-tag">第二章</span>宇宙的程式（河圖洛書）</span><span class="toc-arr">→</span></a>
+    <a class="toc-item" href="#ch3"><span><span class="toc-tag">第三章</span>太陽的語言（時間與曆法）</span><span class="toc-arr">→</span></a>
+    <a class="toc-item" href="#ch4"><span><span class="toc-tag">第四章</span>月亮的語言（月體納甲與四化）</span><span class="toc-arr">→</span></a>
+    <a class="toc-item" href="#ch5"><span><span class="toc-tag">第五章</span>你的命盤怎麼算</span><span class="toc-arr">→</span></a>
+    <a class="toc-item" href="#epilogue"><span><span class="toc-tag">結語</span>諸緒的收攏</span><span class="toc-arr">→</span></a>
+    <a class="toc-item" href="#wuhudun"><span><span class="toc-tag">補充</span>五虎遁完整歸納</span><span class="toc-arr">→</span></a>
+  </div>
+</section>
+
+<!-- 第一章 -->
+<section id="ch1" class="sec-wrap alt">
+  <div class="ch-hd fi">
+    <div class="ch-num">第一章</div>
+    <h2 class="ch-title">什麼是紫微斗數</h2>
+    <div class="ch-rule"><div class="rule-line"></div><div class="rule-dot"></div></div>
+    <p class="ch-sub">先給讀者全貌，再往下展開</p>
+  </div>
+  <div class="pb fi">
+    <div class="pb-stamp">🔗 這跟排盤的關係</div>
+    <div class="pb-head">理解斗數是什麼，才知道後面每個計算在做什麼</div>
+    <p>斗數不是神祕算命，是一套有<strong>完整宇宙觀支撐的客觀命數系統</strong>。名字本身就說明了整套架構，從太極一路展開到五行，每一步都有數學根據。</p>
+  </div>
+
+  <div id="ch1-name" class="blk fi">
+    <div class="blk-title">天罡罫：名字本身就是整套系統的說明</div>
+    <div class="box">
+      原文：「斗數的原名叫做：『天罡罫』。蓋『天罡』指北斗星之總稱。『罫』則為命盤作八卦而佈列也。」
+    </div>
+    <p><strong>天罡</strong>（北斗星的總稱）→ 星象是骨架，命盤以北斗為核心</p>
+    <p><strong>罫</strong>（八卦排列）→ 命盤的空間結構，以八卦佈列宮位</p>
+    <p>比照北斗星之總稱「數」，以指南針八卦排列而生，以農曆（陰曆）為主。以蒼穹<strong>十八顆星</strong>為經，以人之生年干支日時為緯，推測富貴貧賤、禍福休咎。</p>
+  </div>
+
+  <div id="ch1-chain" class="blk fi">
+    <div class="blk-title">完整架構鏈：從太極到五行</div>
+    <!-- 架構鏈 SVG -->
+    <div class="dg">
+      <svg width="660" height="100" viewBox="0 0 660 100" xmlns="http://www.w3.org/2000/svg" style="font-family:'Noto Sans TC',sans-serif;max-width:100%">
+        <!-- 太極 -->
+        <rect x="5" y="20" width="100" height="60" rx="4" fill="#f4efe5" stroke="#9a7518" stroke-width="1.5"/>
+        <text x="55" y="44" text-anchor="middle" font-size="13" font-weight="bold" fill="#9a7518">太極</text>
+        <text x="55" y="62" text-anchor="middle" font-size="10" fill="#867b6e">紫微星</text>
+        <text x="55" y="75" text-anchor="middle" font-size="9" fill="#b83a24">命盤太極點</text>
+        <!-- arrow -->
+        <line x1="110" y1="50" x2="126" y2="50" stroke="#c8bfaf" stroke-width="1.5"/>
+        <polygon points="126,46 134,50 126,54" fill="#c8bfaf"/>
+        <!-- 兩儀 -->
+        <rect x="135" y="20" width="100" height="60" rx="4" fill="#f4efe5" stroke="#4a6090" stroke-width="1.5"/>
+        <text x="185" y="44" text-anchor="middle" font-size="13" font-weight="bold" fill="#4a6090">兩儀</text>
+        <text x="185" y="60" text-anchor="middle" font-size="10" fill="#867b6e">日（太陽）</text>
+        <text x="185" y="73" text-anchor="middle" font-size="10" fill="#867b6e">月（太陰）</text>
+        <!-- arrow -->
+        <line x1="240" y1="50" x2="256" y2="50" stroke="#c8bfaf" stroke-width="1.5"/>
+        <polygon points="256,46 264,50 256,54" fill="#c8bfaf"/>
+        <!-- 四象 -->
+        <rect x="265" y="20" width="100" height="60" rx="4" fill="#f4efe5" stroke="#b83a24" stroke-width="1.5"/>
+        <text x="315" y="44" text-anchor="middle" font-size="13" font-weight="bold" fill="#b83a24">四象</text>
+        <text x="315" y="60" text-anchor="middle" font-size="10" fill="#867b6e">祿・權・科・忌</text>
+        <text x="315" y="73" text-anchor="middle" font-size="9" fill="#b83a24">四化</text>
+        <!-- arrow -->
+        <line x1="370" y1="50" x2="386" y2="50" stroke="#c8bfaf" stroke-width="1.5"/>
+        <polygon points="386,46 394,50 386,54" fill="#c8bfaf"/>
+        <!-- 八卦 -->
+        <rect x="395" y="20" width="100" height="60" rx="4" fill="#f4efe5" stroke="#3a6030" stroke-width="1.5"/>
+        <text x="445" y="44" text-anchor="middle" font-size="13" font-weight="bold" fill="#3a6030">八卦</text>
+        <text x="445" y="60" text-anchor="middle" font-size="10" fill="#867b6e">先後天八卦</text>
+        <text x="445" y="73" text-anchor="middle" font-size="9" fill="#3a6030">宮位空間</text>
+        <!-- arrow -->
+        <line x1="500" y1="50" x2="516" y2="50" stroke="#c8bfaf" stroke-width="1.5"/>
+        <polygon points="516,46 524,50 516,54" fill="#c8bfaf"/>
+        <!-- 五行 -->
+        <rect x="525" y="20" width="120" height="60" rx="4" fill="#ede7da" stroke="#4a4237" stroke-width="1.5"/>
+        <text x="585" y="44" text-anchor="middle" font-size="13" font-weight="bold" fill="#4a4237">五行</text>
+        <text x="585" y="60" text-anchor="middle" font-size="10" fill="#867b6e">諸星五行屬性</text>
+        <text x="585" y="73" text-anchor="middle" font-size="9" fill="#867b6e">（描述工具）</text>
+      </svg>
+      <div class="dg-cap">太極（紫微）→ 兩儀（日・月）→ 四象（祿・權・科・忌）→ 八卦 → 五行<br>五行只是最末端的「描述工具」，不是推算基礎</div>
+    </div>
+    <div class="warn"><div class="lbl">關鍵認知</div>五行只是星辰的「物相」（屬性描述），不是計算基礎。用命盤天干說五行之性，是錯的。斗數星辰排列從頭到尾與五行無關，「不要誤己也誤人。」——蔡明宏</div>
+  </div>
+
+  <div id="ch1-ming" class="blk fi">
+    <div class="blk-title">命是可以造的：宿命論 vs 造命論</div>
+    <div class="tbl"><table>
+      <thead><tr><th>觀點</th><th>說法</th><th>意義</th></tr></thead>
+      <tbody>
+        <tr><td class="td-k">宿命論／命定論</td><td>命運已固定，無法改變</td><td style="color:var(--ink-lt)">消極的解讀</td></tr>
+        <tr><td class="td-k td-r">造命論／知命論</td><td>先了解命運條件，再掌握人生</td><td style="color:var(--red)">積極的應用</td></tr>
+      </tbody>
+    </table></div>
+    <div class="qt">孔子：「<strong>不知命，無以為君子。</strong>」——知命不是認命，是認識自己起點的第一步。</div>
+  </div>
+
+  <div id="ch1-shu" class="blk fi">
+    <div class="blk-title">「數」的本質：天數 = 宇宙的固有程式</div>
+    <p>紫微<strong>斗數</strong>有個「數」字，是因為它描述宇宙的<strong>固有程式規律</strong>，即「天數」或「氣數」——不是隨機的，是有規律可循的。</p>
+    <div class="box">
+      具體例子：一年四季的變化 → 定數<br>
+      月亮盈虧的週期 → 定數<br>
+      海水潮汐的規律 → 定數<br><br>
+      《易・說卦》：「八卦相錯，數往者順，知來者逆，是故易逆數也。」
+    </div>
+    <p>宇宙有一個<strong>總程式</strong>，天數即是先天所固有的程式規律。這套總程式記錄在先天八卦之中，永恆不變，這就是「無極」。</p>
+    <p>原始八卦、易、道德經都是教人<strong>改命</strong>的真經——理解正確，八卦是改命的符號；理解偏差，八卦才淪為算命工具。</p>
+  </div>
+</section>
+
+<!-- 第二章 -->
+<section id="ch2" class="sec-wrap">
+  <div class="ch-hd fi">
+    <div class="ch-num">第二章</div>
+    <h2 class="ch-title">宇宙的程式</h2>
+    <div class="ch-rule"><div class="rule-line"></div><div class="rule-dot"></div></div>
+    <p class="ch-sub">河圖洛書——數字是整個系統的根源</p>
+  </div>
+  <div class="pb fi">
+    <div class="pb-stamp">🔗 這跟排盤的關係</div>
+    <div class="pb-head">時間、四化、排盤全部從這裡來</div>
+    <p>不理解這個，就不知道為什麼甲年和己年的起月公式是一樣的，也不知道四化為什麼是 9、7、8、6。作者強調：<strong>先懂數，再講卦</strong>。河圖不是神祕符號，是一張方位數字對照表。</p>
+  </div>
+
+  <div id="ch2-hetu" class="blk fi">
+    <div class="blk-title">河圖是什麼：方位數字對照表</div>
+    <p>《周髀算經》：「數之法，出於圓方，圓出於方」——數與方位有關。河圖每一句話都在說一個方位的陰陽關係，不是抽象數字。</p>
+    <div class="dg">
+      <svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" style="font-family:'Noto Sans TC',sans-serif">
+        <text x="150" y="18" text-anchor="middle" font-size="13" font-weight="bold" fill="#4a4237">南</text>
+        <text x="150" y="292" text-anchor="middle" font-size="13" font-weight="bold" fill="#4a4237">北</text>
+        <text x="14" y="155" text-anchor="middle" font-size="13" font-weight="bold" fill="#4a4237">東</text>
+        <text x="286" y="155" text-anchor="middle" font-size="13" font-weight="bold" fill="#4a4237">西</text>
+        <line x1="150" y1="82" x2="150" y2="115" stroke="#c8bfaf" stroke-width="1"/>
+        <line x1="150" y1="185" x2="150" y2="218" stroke="#c8bfaf" stroke-width="1"/>
+        <line x1="82" y1="150" x2="115" y2="150" stroke="#c8bfaf" stroke-width="1"/>
+        <line x1="185" y1="150" x2="218" y2="150" stroke="#c8bfaf" stroke-width="1"/>
+        <rect x="100" y="26" width="100" height="56" fill="#f4efe5" stroke="#9a3020" stroke-width="1"/>
+        <text x="150" y="46" text-anchor="middle" font-size="13" font-weight="bold" fill="#9a3020">△ 火</text>
+        <text x="150" y="60" text-anchor="middle" font-size="11" fill="#4a4237">夏</text>
+        <text x="150" y="74" text-anchor="middle" font-size="10" fill="#867b6e">7天(陽)・2地(陰)</text>
+        <rect x="100" y="218" width="100" height="56" fill="#f4efe5" stroke="#2a5080" stroke-width="1"/>
+        <text x="150" y="238" text-anchor="middle" font-size="13" font-weight="bold" fill="#2a5080">▽ 水</text>
+        <text x="150" y="252" text-anchor="middle" font-size="11" fill="#4a4237">冬</text>
+        <text x="150" y="266" text-anchor="middle" font-size="10" fill="#867b6e">1天(陽)・6地(陰)</text>
+        <rect x="26" y="110" width="89" height="80" fill="#f4efe5" stroke="#3a6030" stroke-width="1"/>
+        <text x="70" y="140" text-anchor="middle" font-size="13" font-weight="bold" fill="#3a6030">↑ 木</text>
+        <text x="70" y="155" text-anchor="middle" font-size="11" fill="#4a4237">春</text>
+        <text x="70" y="168" text-anchor="middle" font-size="10" fill="#867b6e">3天(陽)</text>
+        <text x="70" y="180" text-anchor="middle" font-size="10" fill="#867b6e">8地(陰)</text>
+        <rect x="185" y="110" width="89" height="80" fill="#f4efe5" stroke="#806020" stroke-width="1"/>
+        <text x="230" y="140" text-anchor="middle" font-size="13" font-weight="bold" fill="#806020">◇ 金</text>
+        <text x="230" y="155" text-anchor="middle" font-size="11" fill="#4a4237">秋</text>
+        <text x="230" y="168" text-anchor="middle" font-size="10" fill="#867b6e">9天(陽)</text>
+        <text x="230" y="180" text-anchor="middle" font-size="10" fill="#867b6e">4地(陰)</text>
+        <rect x="115" y="115" width="70" height="70" fill="#ede7da" stroke="#4a4237" stroke-width="1.5"/>
+        <text x="150" y="138" text-anchor="middle" font-size="13" font-weight="bold" fill="#4a4237">■ 土</text>
+        <text x="150" y="153" text-anchor="middle" font-size="10" fill="#4a4237">四季轉換</text>
+        <text x="150" y="166" text-anchor="middle" font-size="10" fill="#867b6e">5天・10地</text>
+      </svg>
+      <div class="dg-cap">傳統中國地圖：南上北下，東左西右<br>奇數為天（陽），偶數為地（陰）；中土無專屬季節</div>
+    </div>
+  </div>
+
+  <div id="ch2-pair" class="blk fi">
+    <div class="blk-title">河圖的配對規則：相差 5 的天干是一對</div>
+    <div class="tbl"><table>
+      <thead><tr><th>天干（陽）</th><th>數</th><th style="text-align:center">配對</th><th>天干（陰）</th><th>數</th></tr></thead>
+      <tbody>
+        <tr><td class="td-r">甲</td><td>1</td><td style="text-align:center;color:var(--gold)">↔</td><td class="td-r">己</td><td>6</td></tr>
+        <tr><td class="td-r">乙</td><td>2</td><td style="text-align:center;color:var(--gold)">↔</td><td class="td-r">庚</td><td>7</td></tr>
+        <tr><td class="td-r">丙</td><td>3</td><td style="text-align:center;color:var(--gold)">↔</td><td class="td-r">辛</td><td>8</td></tr>
+        <tr><td class="td-r">丁</td><td>4</td><td style="text-align:center;color:var(--gold)">↔</td><td class="td-r">壬</td><td>9</td></tr>
+        <tr><td class="td-r">戊</td><td>5</td><td style="text-align:center;color:var(--gold)">↔</td><td class="td-r">癸</td><td>10</td></tr>
+      </tbody>
+    </table></div>
+    <p>沒有五行，就只是「差 5 就是一對」——甲己同組、乙庚同組。這就是五虎遁甲年與己年用同一起月公式的原因。</p>
+    <div class="box">
+      河圖五個奇數（陽數）：1、3、5、7、9<br>
+      五虎遁的五個起始月干對應數字：3、5、7、9、1<br>
+      3 + 5 + 7 + 9 + 1 = <span class="gold">25</span>（河圖所有奇數之和，也是大衍之數50的一半）<br><br>
+      大衍之數 50 = 天五（5）× 地十（10）<br>
+      用49不用50：先抽出「1」代表太極擺在一旁，只用49根蓍草占卦。
+    </div>
+  </div>
+
+  <div id="ch2-obs" class="blk fi">
+    <div class="blk-title">河圖數字的觀象根源：一六為水、二七為火</div>
+    <p>河圖的數字不是抽象的，是古人從農曆月份的自然現象直接觀察所得：</p>
+    <div class="grid">
+      <div class="card"><div class="card-lbl">水 · 一六</div><div class="card-val">正月 + 六月</div><div class="card-desc">正月冰融春雨，中氣「雨水」= 水誕生（天一生水）<br>六月颱風洪水，水最旺盛（地六成之）</div></div>
+      <div class="card"><div class="card-lbl">火 · 二七</div><div class="card-val">二月 + 七月</div><div class="card-desc">二月驚蟄第一聲雷，古人靠雷電取火（地二生火）<br>七月處暑最炎熱，盛極而衰（天七成之）</div></div>
+    </div>
+    <div class="box">結論：河圖是<strong>天文觀察的記錄</strong>，不是神祕符號。「則」的意思是效法——聖人效法天文現象，才取了這些數字。</div>
+  </div>
+
+  <div id="ch2-luo" class="blk fi">
+    <div class="blk-title">洛書 vs 河圖：唯獨奇數不變，偶數有變</div>
+    <div class="dg">
+      <svg width="210" height="210" viewBox="0 0 210 210" xmlns="http://www.w3.org/2000/svg" style="font-family:'Noto Sans TC',sans-serif">
+        <rect x="5" y="5" width="200" height="200" fill="none" stroke="#4a4237" stroke-width="1.5"/>
+        <line x1="72" y1="5" x2="72" y2="205" stroke="#4a4237" stroke-width="1"/>
+        <line x1="139" y1="5" x2="139" y2="205" stroke="#4a4237" stroke-width="1"/>
+        <line x1="5" y1="72" x2="205" y2="72" stroke="#4a4237" stroke-width="1"/>
+        <line x1="5" y1="139" x2="205" y2="139" stroke="#4a4237" stroke-width="1"/>
+        <text x="38" y="46" text-anchor="middle" font-size="22" fill="#4a4237">4</text>
+        <text x="105" y="46" text-anchor="middle" font-size="22" fill="#9a3020" font-weight="bold">9</text>
+        <text x="172" y="46" text-anchor="middle" font-size="22" fill="#4a4237">2</text>
+        <text x="38" y="113" text-anchor="middle" font-size="22" fill="#4a4237">3</text>
+        <rect x="72" y="72" width="67" height="67" fill="#ede7da"/>
+        <text x="105" y="113" text-anchor="middle" font-size="26" fill="#9a7518" font-weight="bold">5</text>
+        <text x="172" y="113" text-anchor="middle" font-size="22" fill="#4a4237">7</text>
+        <text x="38" y="180" text-anchor="middle" font-size="22" fill="#4a4237">8</text>
+        <text x="105" y="180" text-anchor="middle" font-size="22" fill="#4a4237">1</text>
+        <text x="172" y="180" text-anchor="middle" font-size="22" fill="#4a4237">6</text>
+      </svg>
+      <div class="dg-cap">洛書九宮｜縱、橫、對角線加總皆等於 15</div>
+    </div>
+    <div class="tbl"><table>
+      <thead><tr><th></th><th>數字範圍</th><th>奇數合計</th><th>偶數合計</th><th>誰多</th></tr></thead>
+      <tbody>
+        <tr><td class="td-k">河圖</td><td>1–10</td><td>25</td><td>30</td><td class="td-g">偶多</td></tr>
+        <tr><td class="td-k td-r">洛書</td><td>1–9</td><td>25</td><td>20</td><td class="td-r">奇多</td></tr>
+      </tbody>
+    </table></div>
+    <div class="box">
+      <strong>奇數（天數）= 太陽主導的部分，永遠穩定（25）。</strong><br>
+      偶數（地數）= 月亮主導的部分，它會變化（30 vs 20）。<br><br>
+      差的那個「十」（地十）對應：① 月亮的陰晴圓缺 ② 足月懷胎的十個月 ③ 五虎遁的十天干起月法<br><br>
+      比喻：月亮的光來自太陽，但月亮是月亮，不是太陽。洛書來自河圖，但洛書有自己的意義。
+    </div>
+    <p>河圖生數（天）1+2+3+4 = <strong>10</strong>（象）；成數（地）6+7+8+9 = <strong>30</strong>（數）。成數加總剛好等於一個月的天數，生數等於天干的數量——整個系統設計的核心。</p>
+  </div>
+</section>
+
+<!-- 第三章 -->
+<section id="ch3" class="sec-wrap alt">
+  <div class="ch-hd fi">
+    <div class="ch-num">第三章</div>
+    <h2 class="ch-title">太陽的語言</h2>
+    <div class="ch-rule"><div class="rule-line"></div><div class="rule-dot"></div></div>
+    <p class="ch-sub">時間與曆法——河圖的數字如何對應到現實的時間系統</p>
+  </div>
+  <div class="pb fi">
+    <div class="pb-stamp">🔗 這跟排盤的關係</div>
+    <div class="pb-head">斗數用農曆排盤，生日要用農曆輸入</div>
+    <p>不懂曆法的人，連出生月份都可能搞錯。<strong>閏月生的人尤其要注意</strong>——閏月 1–15 日算前一個月，16–30 日算後一個月。太陽管季節，月亮管四化，不要混用。</p>
+  </div>
+
+  <div id="ch3-li" class="blk fi">
+    <div class="blk-title">三種曆法：斗數用哪一種</div>
+    <div class="tbl"><table>
+      <thead><tr><th>曆法</th><th>生活例子</th><th>主角</th></tr></thead>
+      <tbody>
+        <tr><td class="td-k">陽曆</td><td>西曆生日、元旦</td><td style="color:var(--ink-lt)">太陽繞地球一圈 ≈ 365 天</td></tr>
+        <tr><td class="td-k">陰曆</td><td>農曆初一、十五</td><td style="color:var(--ink-lt)">月亮繞地球一圈 ≈ 29.5 天</td></tr>
+        <tr><td class="td-k td-r">陰陽曆</td><td>台灣農曆（含閏月）</td><td style="color:var(--red)">兩者兼顧，靠「閏月」修正</td></tr>
+      </tbody>
+    </table></div>
+    <div class="box">
+      太陽 → 春夏秋冬（季）→ 二十四節氣<br>
+      太陰（月亮）→ 祿、權、科、忌（月）→ 月亮盈虧<br><br>
+      陰曆跟著月亮走，不反映季節——農曆七月有時是夏天，有時是秋天，這是正常的。<br>
+      斗數四化跟月亮，<strong>不需要管太陽的季節</strong>。
+    </div>
+  </div>
+
+  <div id="ch3-ji" class="blk fi">
+    <div class="blk-title">四季與二十四節氣</div>
+    <p>地球自轉軸歪了 23°27'，繞太陽公轉時北半球有時朝向太陽（夏）、有時背向（冬）——這是四季的根本原因。</p>
+    <p>四季始於<strong>四立</strong>（立春、立夏、立秋、立冬），不是春分。春分是春天的<strong>中間</strong>，不是起點。「一涵三」：一個季節涵蓋三個月。</p>
+    <div class="box">每卦 6 爻 × 每爻 15 天 = 90 天（一季）<br>4 季 × 90 天 = <strong>360 天</strong>（農曆一年）<br><br>洛書九宮縱橫皆等於 15 → 一個節氣剛好是 15 天（三候 × 五天）<br>「氣候」二字由此而來：「氣」= 15天，「候」= 5天</div>
+    <p>二十四節氣其實是「十二節氣 + 十二中氣」。春分、夏至、秋分、冬至都是「<strong>中氣</strong>」，不是節氣——這和一般人的認知不同。</p>
+    <div class="solar">
+      <div class="solar-item"><span class="jie">正月｜立春</span><span class="zhong">雨水（中）</span></div>
+      <div class="solar-item"><span class="jie">二月｜驚蟄</span><span class="zhong">春分（中）</span></div>
+      <div class="solar-item"><span class="jie">三月｜清明</span><span class="zhong">穀雨（中）</span></div>
+      <div class="solar-item"><span class="jie">四月｜立夏</span><span class="zhong">小滿（中）</span></div>
+      <div class="solar-item"><span class="jie">五月｜芒種</span><span class="zhong">夏至（中）</span></div>
+      <div class="solar-item"><span class="jie">六月｜小暑</span><span class="zhong">大暑（中）</span></div>
+      <div class="solar-item"><span class="jie">七月｜立秋</span><span class="zhong">處暑（中）</span></div>
+      <div class="solar-item"><span class="jie">八月｜白露</span><span class="zhong">秋分（中）</span></div>
+      <div class="solar-item"><span class="jie">九月｜寒露</span><span class="zhong">霜降（中）</span></div>
+      <div class="solar-item"><span class="jie">十月｜立冬</span><span class="zhong">小雪（中）</span></div>
+      <div class="solar-item"><span class="jie">十一月｜大雪</span><span class="zhong">冬至（中）</span></div>
+      <div class="solar-item"><span class="jie">十二月｜小寒</span><span class="zhong">大寒（中）</span></div>
+    </div>
+    <p style="font-size:.83rem;color:var(--ink-lt)">四正卦（子午卯酉）= 冬至、夏至、春分、秋分四個中氣 → 斗數論命不需要理會節氣，四化已含在其中。</p>
+  </div>
+
+  <div id="ch3-yin" class="blk fi">
+    <div class="blk-title">建月在寅：為什麼一年從寅月開始</div>
+    <div class="tbl"><table>
+      <thead><tr><th>層次</th><th>說明</th><th>意思</th></tr></thead>
+      <tbody>
+        <tr><td>第一層</td><td>人生於寅</td><td>生命從寅（農曆正月、虎月）開始</td></tr>
+        <tr><td>第二層</td><td>節氣建月在立春</td><td>曆法以立春（寅月初）為一年起點</td></tr>
+        <tr><td style="color:var(--red)">第三層</td><td style="color:var(--red)">月亮賦予十二個月</td><td style="color:var(--red)">月亮的盈虧週期才是整個系統的心跳</td></tr>
+      </tbody>
+    </table></div>
+    <p>寅月對應<strong>泰卦</strong>（上坤下乾）：天陽在下、地陰在上，兩者相向而行、陰陽相交——這就是「生命誕生」的狀態。命宮從「寅」開始，象徵天地交泰、生命開啟。</p>
+
+    <!-- 泰卦十二宮圖 -->
+    <div class="blk-title" style="margin-top:1.8rem">泰卦拆解：十二宮的命與性</div>
+    <p style="font-size:.88rem;color:var(--ink-mid);margin-bottom:1rem">泰卦（上坤下乾）分上下兩半，上半為「性」（坤及三女），下半為「命」（乾之三子）。十二地支分布其中，命宮從<strong>艮・寅</strong>（第一個陽月）起。</p>
+    <div class="dg" style="overflow-x:auto">
+      <table style="border-collapse:collapse;text-align:center;margin:0 auto;font-family:'Noto Sans TC',sans-serif;font-size:.88rem;line-height:1.9;min-width:340px">
+        <!-- Row 1: 巳 午 未 申 -->
+        <tr>
+          <td style="border:1px solid var(--border);padding:10px 14px;min-width:72px;background:var(--paper2)"><strong>巽</strong> ☴<br><small style="color:var(--ink-lt)">巳</small></td>
+          <td style="border:1px solid var(--border);padding:10px 14px;background:var(--paper2)"><strong>離</strong> ☲<br><small style="color:var(--ink-lt)">午</small></td>
+          <td style="border:1px solid var(--border);padding:10px 14px;background:var(--paper2)"><strong>坤</strong> ☷<br><small style="color:var(--ink-lt)">未</small></td>
+          <td style="border:1px solid var(--border);padding:10px 14px;background:var(--paper2)"><strong>坤</strong> ☷<br><small style="color:var(--ink-lt)">申</small></td>
+        </tr>
+        <!-- Row 2: 辰 [中央性/命說明] 酉 -->
+        <tr>
+          <td style="border:1px solid var(--border);border-bottom:2px dashed var(--red);padding:10px 14px;background:var(--paper2)"><strong>巽</strong> ☴<br><small style="color:var(--ink-lt)">辰</small></td>
+          <td colspan="2" rowspan="2" style="border:1px solid var(--border);padding:14px 10px;vertical-align:middle;background:var(--paper)">
+            <div style="color:var(--ink-lt);font-size:.75rem;margin-bottom:.3rem">↑ 上為</div>
+            <div style="font-weight:700;font-size:1rem;color:var(--ink)">性</div>
+            <div style="font-size:.7rem;color:var(--ink-lt);margin-bottom:.6rem">坤及三女：巽・離・兌</div>
+            <div style="border-top:2px dashed var(--red);padding-top:.6rem;color:var(--ink-lt);font-size:.75rem">↓ 下為</div>
+            <div style="font-weight:700;font-size:1rem;color:var(--red)">命</div>
+            <div style="font-size:.7rem;color:var(--ink-lt)">乾之三子：震・坎・艮</div>
+          </td>
+          <td style="border:1px solid var(--border);border-bottom:2px dashed var(--red);padding:10px 14px;background:var(--paper2)"><strong>兌</strong> ☱<br><small style="color:var(--ink-lt)">酉</small></td>
+        </tr>
+        <!-- Row 3: 卯 [span] 戌 -->
+        <tr>
+          <td style="border:1px solid var(--border);border-top:2px dashed var(--red);padding:10px 14px;background:var(--paper3)"><strong>震</strong> ☳<br><small style="color:var(--ink-lt)">卯</small></td>
+          <td style="border:1px solid var(--border);border-top:2px dashed var(--red);padding:10px 14px;background:var(--paper3)"><strong>乾</strong> ☰<br><small style="color:var(--ink-lt)">戌</small></td>
+        </tr>
+        <!-- Row 4: 寅 丑 子 亥 -->
+        <tr>
+          <td style="border:1px solid var(--border);padding:10px 14px;background:var(--paper3)"><strong>艮</strong> ☶<br><small style="color:var(--red);font-weight:600">寅★</small></td>
+          <td style="border:1px solid var(--border);padding:10px 14px;background:var(--paper3)"><strong>艮</strong> ☶<br><small style="color:var(--ink-lt)">丑</small></td>
+          <td style="border:1px solid var(--border);padding:10px 14px;background:var(--paper3)"><strong>坎</strong> ☵<br><small style="color:var(--ink-lt)">子</small></td>
+          <td style="border:1px solid var(--border);padding:10px 14px;background:var(--paper3)"><strong>乾</strong> ☰<br><small style="color:var(--ink-lt)">亥</small></td>
+        </tr>
+      </table>
+    </div>
+    <div class="box" style="margin-top:1rem;font-size:.85rem">
+      <strong>艮納丙・艮在寅位</strong>，月體納甲說「艮納丙」→ 寅位的天干是丙。<br>
+      因此五虎遁「甲己年從丙寅起」不是死背規則，而是從泰卦→月體納甲推導出來的：<br>
+      <span style="color:var(--red)">乾納甲（甲年）→ 乾之少男艮在寅 → 艮納丙 → 甲年寅月天干＝丙</span>
+    </div>
+  </div>
+
+  <div id="ch3-run" class="blk fi">
+    <div class="blk-title">閏月的來源：日子計算「溢出」的自然結果</div>
+    <p>農曆比陽曆每年少約 11 天，19 年累積差距剛好是 7 個月 → 每 19 年置 7 個閏月（默冬週期，中國與希臘均獨立發現）。</p>
+    <div class="box">
+      <strong>流日算法的秘密（初一為什麼要進一格）：</strong><br>
+      月令宮位是「月份的標記牌」，日子從月令的<span class="red">下一格</span>開始數。<br><br>
+      結果：每年多走 12 格 → 兩年累積 24 格 → 第三年溢出 30 格<br>
+      → <strong>閏月不是憑空加的，是整個日子計算系統自然溢出的結果。</strong>不進一格，閏月無從產生。
+    </div>
+    <div class="tbl"><table>
+      <thead><tr><th>閏月日期</th><th>歸屬</th></tr></thead>
+      <tbody>
+        <tr><td class="td-k">閏月 1–15 日</td><td>算<strong>前一個月</strong>（以滿月15日為分界）</td></tr>
+        <tr><td class="td-k">閏月 16–30 日</td><td>算<strong>後一個月</strong></td></tr>
+      </tbody>
+    </table></div>
+    <div class="box">
+      天數（1+3+5+7+9）去掉1 = 3+5+7+9 = <span class="gold">24</span> → 對應一年24節氣<br>
+      地數（2+4+6+8+10）去掉6 = 2+4+8+10 = <span class="gold">24</span> → 對應一天24小時<br>
+      為什麼去掉1和6？冬至屬水（1和6是水的生成數對），萬物到冬至必歸藏，再從甲（東方春天）重新出發。
+    </div>
+  </div>
+</section>
+
+<!-- 第四章 -->
+<section id="ch4" class="sec-wrap">
+  <div class="ch-hd fi">
+    <div class="ch-num">第四章</div>
+    <h2 class="ch-title">月亮的語言</h2>
+    <div class="ch-rule"><div class="rule-line"></div><div class="rule-dot"></div></div>
+    <p class="ch-sub">月體納甲與四化——月亮是四化之母</p>
+  </div>
+  <div class="pb fi">
+    <div class="pb-stamp">🔗 這跟排盤的關係</div>
+    <div class="pb-head">四化（化祿、化權、化科、化忌）是欽天門最核心的系統</div>
+    <p>理解月體納甲，才能真正理解四化為什麼這樣分配。命盤十二宮的天干，全部來自<strong>月亮天干</strong>——不是五行天干！「用五行的金木水火土解釋十二宮天干，是沒有道理的，於斗數<strong>無法有據</strong>！」——蔡明宏</p>
+  </div>
+
+  <div id="ch4-mother" class="blk fi">
+    <div class="blk-title">月亮是四化之母</div>
+    <div class="qt" style="font-size:1rem;font-style:normal">「大哉坤元，萬物資生。坤元者，太陰（月亮）也。」</div>
+    <p>月亮每月的盈虧週期，用八卦記錄，配上天干，就得到了「什麼天干管什麼月相」的規律——這就是<strong>月體納甲</strong>，四化從這裡來。</p>
+    <p>月體納甲配的是<strong>伏羲先天八卦</strong>，不是文王後天八卦。八卦分兩類：</p>
+    <div class="tbl"><table>
+      <thead><tr><th>類別</th><th>八卦</th><th>代表</th></tr></thead>
+      <tbody>
+        <tr><td class="td-k">月相卦（你看到的）</td><td>乾、坤、震、兌、艮、巽</td><td>月亮六個可見相位</td></tr>
+        <tr><td class="td-k">本體卦（背後的源頭）</td><td>離 ☲（納己）、坎 ☵（納戊）</td><td>太陽本身・月亮本體＝地球視角</td></tr>
+      </tbody>
+    </table></div>
+    <p style="font-size:.85rem;color:var(--ink-lt)">書上特別標注：「在此戊己土指地球。」四化是從地球視角觀測月亮與太陽相對位置而產生的天文系統。</p>
+  </div>
+
+  <div id="ch4-najia" class="blk fi">
+    <div class="blk-title">月體納甲：六個月相（點擊查看詳情）</div>
+    <div class="moon-grid" id="moonGrid">
+      <div class="moon-card" data-id="0">
+        <span class="moon-ico">🌑</span>
+        <div class="moon-date">三十（晦）</div>
+        <div class="moon-name">月全隱</div>
+        <div class="moon-gua">坤 ☷</div>
+        <div class="moon-tian">乙（外）・癸（內）</div>
+      </div>
+      <div class="moon-card" data-id="1">
+        <span class="moon-ico">🌒</span>
+        <div class="moon-date">初三</div>
+        <div class="moon-name">蛾眉月初現</div>
+        <div class="moon-gua">震 ☳</div>
+        <div class="moon-tian">庚（西方）</div>
+      </div>
+      <div class="moon-card" data-id="2">
+        <span class="moon-ico">🌓</span>
+        <div class="moon-date">初八</div>
+        <div class="moon-name">上弦月</div>
+        <div class="moon-gua">兌 ☱</div>
+        <div class="moon-tian">丁（南方）</div>
+      </div>
+      <div class="moon-card" data-id="3" style="border-color:rgba(154,117,24,.3)">
+        <span class="moon-ico">🌕</span>
+        <div class="moon-date">十五</div>
+        <div class="moon-name" style="color:var(--gold)">滿月</div>
+        <div class="moon-gua">乾 ☰</div>
+        <div class="moon-tian" style="color:var(--gold)">甲（東）・壬（北）</div>
+      </div>
+      <div class="moon-card" data-id="4">
+        <span class="moon-ico">🌗</span>
+        <div class="moon-date">二十三</div>
+        <div class="moon-name">下弦月</div>
+        <div class="moon-gua">艮 ☶</div>
+        <div class="moon-tian">丙（南方）</div>
+      </div>
+      <div class="moon-card" data-id="5">
+        <span class="moon-ico">🌘</span>
+        <div class="moon-date">二十八</div>
+        <div class="moon-name">下蛾眉月</div>
+        <div class="moon-gua">巽 ☴</div>
+        <div class="moon-tian">辛（西方）</div>
+      </div>
+    </div>
+    <!-- Detail panel -->
+    <div class="moon-detail" id="moonDetail"></div>
+
+    <div class="warn" style="margin-top:1.5rem"><div class="lbl">⚠ 兩套座標不可混用</div>月體納甲的方向指「那天你要往哪個方向看才能找到月亮」，與後天八卦命盤方向是兩套不同座標。同一個「震」卦：後天八卦=東（卯），月體納甲=西（庚）。</div>
+
+    <div style="margin-top:1.2rem">
+      <p style="font-size:.9rem;font-weight:600;margin-bottom:.6rem">三組對稱：</p>
+      <div class="tbl"><table>
+        <thead><tr><th>對稱組</th><th>盈（乾家族）</th><th>虧（坤家族）</th><th>方位</th></tr></thead>
+        <tbody>
+          <tr><td class="td-k">蛾眉月對</td><td>巽辛（二十八，陰）</td><td>震庚（初三，陽）</td><td>西</td></tr>
+          <tr><td class="td-k">弦月對</td><td>兌丁（初八，陰）</td><td>艮丙（二十三，陽）</td><td>南</td></tr>
+          <tr><td class="td-k" style="color:var(--gold)">朔望對</td><td style="color:var(--gold)">乾甲壬（十五，陽）</td><td>坤乙癸（三十，陰）</td><td>東＋北</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+  </div>
+
+  <div id="ch4-sihua" class="blk fi">
+    <div class="blk-title">四化的數字根源：成數 6789 → 祿權科忌</div>
+    <div class="box">
+      <strong>第一步：奇偶分組</strong><br>
+      奇數（天數，陽）9、7 → 化祿、化權<br>
+      偶數（地數，陰）8、6 → 化科、化忌<br><br>
+      <strong>第二步：組內按大小</strong><br>
+      陽組：9 &gt; 7 → 大的是祿，小的是權<br>
+      陰組：8 &gt; 6 → 大的是科，小的是忌
+    </div>
+    <div class="sihua">
+      <div class="sh sh-lu"><div class="sh-num">9</div><div class="sh-name">化祿</div><div class="sh-desc">奇大/生數4<br>利益・收穫</div></div>
+      <div class="sh sh-quan"><div class="sh-num">7</div><div class="sh-name">化權</div><div class="sh-desc">奇小/生數2<br>掌控・威勢</div></div>
+      <div class="sh sh-ke"><div class="sh-num">8</div><div class="sh-name">化科</div><div class="sh-desc">偶大/生數3<br>名聲・文秀</div></div>
+      <div class="sh sh-ji"><div class="sh-num">6</div><div class="sh-name">化忌</div><div class="sh-desc">偶小/生數1<br>損耗・阻礙</div></div>
+    </div>
+    <!-- 四化十字 SVG -->
+    <div class="dg">
+      <svg width="260" height="260" viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg" style="font-family:'Noto Sans TC',sans-serif">
+        <line x1="130" y1="75" x2="130" y2="105" stroke="#c8bfaf" stroke-width="1.5"/>
+        <line x1="130" y1="155" x2="130" y2="185" stroke="#c8bfaf" stroke-width="1.5"/>
+        <line x1="75" y1="130" x2="105" y2="130" stroke="#c8bfaf" stroke-width="1.5"/>
+        <line x1="155" y1="130" x2="185" y2="130" stroke="#c8bfaf" stroke-width="1.5"/>
+        <rect x="90" y="24" width="80" height="51" fill="#f4efe5" stroke="#9a3020" stroke-width="1.5"/>
+        <text x="130" y="44" text-anchor="middle" font-size="14" font-weight="bold" fill="#9a3020">化權</text>
+        <text x="130" y="60" text-anchor="middle" font-size="20" fill="#4a4237">7</text>
+        <text x="130" y="72" text-anchor="middle" font-size="9" fill="#867b6e">生2・奇小</text>
+        <rect x="90" y="185" width="80" height="51" fill="#f4efe5" stroke="#6a6460" stroke-width="1.5"/>
+        <text x="130" y="205" text-anchor="middle" font-size="14" font-weight="bold" fill="#6a6460">化忌</text>
+        <text x="130" y="221" text-anchor="middle" font-size="20" fill="#4a4237">6</text>
+        <text x="130" y="233" text-anchor="middle" font-size="9" fill="#867b6e">生1・偶小</text>
+        <rect x="24" y="100" width="81" height="60" fill="#f4efe5" stroke="#2a7090" stroke-width="1.5"/>
+        <text x="64" y="124" text-anchor="middle" font-size="14" font-weight="bold" fill="#2a7090">化科</text>
+        <text x="64" y="142" text-anchor="middle" font-size="20" fill="#4a4237">8</text>
+        <text x="64" y="153" text-anchor="middle" font-size="9" fill="#867b6e">生3・偶大</text>
+        <rect x="155" y="100" width="81" height="60" fill="#f4efe5" stroke="#a07820" stroke-width="1.5"/>
+        <text x="196" y="124" text-anchor="middle" font-size="14" font-weight="bold" fill="#a07820">化祿</text>
+        <text x="196" y="142" text-anchor="middle" font-size="20" fill="#4a4237">9</text>
+        <text x="196" y="153" text-anchor="middle" font-size="9" fill="#867b6e">生4・奇大</text>
+        <rect x="105" y="105" width="50" height="50" fill="#ede7da" stroke="#4a4237" stroke-width="1"/>
+        <text x="130" y="124" text-anchor="middle" font-size="9" fill="#4a4237">生合 5</text>
+        <text x="130" y="138" text-anchor="middle" font-size="9" fill="#4a4237">成合 15</text>
+        <text x="130" y="150" text-anchor="middle" font-size="9" fill="#9a7518">= 滿月</text>
+      </svg>
+      <div class="dg-cap">四化十字｜祿+忌=9+6=15，權+科=7+8=15<br>每一組對面相加都等於 15，正是農曆十五的滿月</div>
+    </div>
+  </div>
+
+  <div id="ch4-myy" class="blk fi">
+    <div class="blk-title">命、性、運的區別</div>
+    <div class="tbl"><table>
+      <thead><tr><th>名詞</th><th>時間點</th><th>意思</th></tr></thead>
+      <tbody>
+        <tr><td class="td-k" style="color:#4a7090">性</td><td>受孕→出生前（胎內十月）</td><td>父母給你的原始底色。藏在<strong>左輔、右弼、文昌、文曲</strong>四星之中。</td></tr>
+        <tr><td class="td-k td-g">命</td><td>出生那一刻</td><td>性落實成命盤，<strong>固定</strong>下來</td></tr>
+        <tr><td class="td-k" style="color:#5a8040">運</td><td>出生後</td><td>後天遇到的環境、機遇，持續<strong>流動</strong></td></tr>
+      </tbody>
+    </table></div>
+    <div class="qt">「凡是生命已經被誕生，就沒有所謂的先天可言了。」——出生那一刻，先天結束。命盤固定，但運是流動的。</div>
+    <div class="box">
+      <strong>象與數：易是象數合一之學</strong><br>
+      象學（月亮）→ 易象、四化，從月亮盈虧映像而來<br>
+      數學（太陽）→ 河圖、節氣，從太陽運行數字而來<br><br>
+      四化用「象」（月亮系統），排盤用「數」（河圖/太陽系統）。
+    </div>
+  </div>
+</section>
+
+<!-- 第五章 -->
+<section id="ch5" class="sec-wrap alt">
+  <div class="ch-hd fi">
+    <div class="ch-num">第五章</div>
+    <h2 class="ch-title">你的命盤怎麼算</h2>
+    <div class="ch-rule"><div class="rule-line"></div><div class="rule-dot"></div></div>
+    <p class="ch-sub">前四章的知識在這裡落地，變成實際的排盤步驟</p>
+  </div>
+  <div class="pb fi">
+    <div class="pb-stamp">🔗 這跟排盤的關係</div>
+    <div class="pb-head">這些是實際排命盤時一定會用到的計算</div>
+    <p><strong>五虎遁</strong>決定月份的天干；<strong>納音</strong>決定紫微星的位置（命局）。沒有這兩個，盤就排不出來。<strong>子時換日</strong>如果搞錯，整張盤都是錯的。</p>
+  </div>
+
+  <div id="ch5-tiger" class="blk fi">
+    <div class="blk-title">五虎遁：從年干推算寅月天干（河圖奇數的直接應用）</div>
+    <div class="tigers">
+      <div class="tc"><div class="tc-year">甲年・己年</div><div class="tc-res">丙寅</div><div class="tc-rule">甲己之年丙作首</div></div>
+      <div class="tc"><div class="tc-year">乙年・庚年</div><div class="tc-res">戊寅</div><div class="tc-rule">乙庚之年戊為頭</div></div>
+      <div class="tc"><div class="tc-year">丙年・辛年</div><div class="tc-res">庚寅</div><div class="tc-rule">丙辛之年庚寅首</div></div>
+      <div class="tc"><div class="tc-year">丁年・壬年</div><div class="tc-res">壬寅</div><div class="tc-rule">丁壬之年壬寅流</div></div>
+      <div class="tc"><div class="tc-year">戊年・癸年</div><div class="tc-res">甲寅</div><div class="tc-rule">戊癸之年甲寅頭</div></div>
+    </div>
+    <div class="box">
+      舉例：2024 年甲辰年 → 甲年 → 正月天干 = <strong>丙寅月</strong><br><br>
+      五虎遁原名「五平冠蓋」，冠蓋 = 立寅。六十甲子從甲子走到癸酉，走過10天干 = 胎中十個月。出生那一刻 = 甲戌：天干重新開始，地支已偏移 → 代表「已出生，進入後天」。五虎遁不只是排月份的工具，代表先天與後天的交界點。
+    </div>
+    <div class="box">
+      <strong>從月體納甲推導五虎遁（甲年為何從丙寅起）：</strong><br>
+      1. 月體納甲：乾納甲（甲是十天干之首）<br>
+      2. 甲年 = 乾當道之年<br>
+      3. 乾的少男艮，站在寅位，艮納丙<br>
+      4. 所以：<span style="color:var(--red)">甲年寅月天干 = 丙 → 甲年從丙寅起</span><br>
+      5. 己與甲天干五合（甲己合），所以己年同起
+    </div>
+  </div>
+
+  <div id="ch5-nayin" class="blk fi">
+    <div class="blk-title">納音：決定紫微星位置，命局的來源</div>
+    <p>六十甲子每兩組一對（共30對），每對對應一種五行屬性，稱為「納音五行」，決定你的「<strong>命局</strong>」：</p>
+    <div class="grid">
+      <div class="card"><div class="card-lbl">命局</div><div class="card-val" style="color:#2a6080">水二局</div></div>
+      <div class="card"><div class="card-lbl">命局</div><div class="card-val" style="color:#3a7040">木三局</div></div>
+      <div class="card"><div class="card-lbl">命局</div><div class="card-val" style="color:var(--gold)">金四局</div></div>
+      <div class="card"><div class="card-lbl">命局</div><div class="card-val" style="color:#705020">土五局</div></div>
+      <div class="card"><div class="card-lbl">命局</div><div class="card-val" style="color:var(--red)">火六局</div></div>
+      <div class="card" style="border-style:dashed"><div class="card-lbl">注意</div><div class="card-val" style="color:var(--ink-lt);font-size:.9rem">沒有一局</div><div class="card-desc">「一」是太極，命盤從二起算<br>水火易位：火取六，水取二</div></div>
+    </div>
+    <!-- 掌中訣手掌圖 -->
+    <div style="display:flex;gap:1.8rem;flex-wrap:wrap;justify-content:center;align-items:flex-start;margin:1.5rem 0 2rem">
+      <!-- ══ 圖一：五行位置 ══ -->
+      <figure style="margin:0;text-align:center">
+        <figcaption style="font-family:'Noto Sans TC',sans-serif;font-size:.7rem;letter-spacing:.28em;color:var(--ink-lt);margin-bottom:.6rem">圖一・五行位置</figcaption>
+        <svg width="340" height="440" viewBox="0 0 340 440" xmlns="http://www.w3.org/2000/svg" style="font-family:'Noto Sans TC',sans-serif;overflow:visible">
+          <defs>
+            <marker id="ah1" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto">
+              <path d="M0,0.5 L6,3.5 L0,6.5 Z" fill="#b83a24"/>
+            </marker>
+          </defs>
+          <!-- PALM -->
+          <path d="M 96,358 Q 74,366 66,388 Q 58,410 74,422 Q 94,430 200,432 Q 306,430 326,422 Q 342,410 334,388 Q 326,366 304,358 Z"
+                fill="#f0dcc8" stroke="#c09870" stroke-width="1.5"/>
+          <path d="M 100,390 Q 150,380 200,382 Q 250,384 300,392" fill="none" stroke="#d8b08a" stroke-width="0.8" opacity="0.45"/>
+          <!-- THUMB left side -->
+          <path d="M 95,376 Q 75,354 65,326 Q 55,298 62,274 Q 69,253 84,249 Q 100,247 110,264 Q 119,283 115,313 L 114,370"
+                fill="#f0dcc8" stroke="#c09870" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M 67,302 Q 83,287 99,295" fill="none" stroke="#d8b08a" stroke-width="0.9"/>
+          <!-- PINKY right cx=296 hw=12 tip=214 -->
+          <path d="M 284,370 L 284,226 Q 284,214 296,214 Q 308,214 308,226 L 308,370 Z"
+                fill="#f0dcc8" stroke="#c09870" stroke-width="1.5"/>
+          <path d="M 284,262 Q 296,268 308,262" fill="none" stroke="#d8b08a" stroke-width="0.9"/>
+          <path d="M 284,240 Q 296,246 308,240" fill="none" stroke="#d8b08a" stroke-width="0.9"/>
+          <!-- INDEX cx=150 hw=16 tip=150 -->
+          <path d="M 134,370 L 134,166 Q 134,150 150,150 Q 166,150 166,166 L 166,370 Z"
+                fill="#f0dcc8" stroke="#c09870" stroke-width="1.5"/>
+          <path d="M 134,276 Q 150,282 166,276" fill="none" stroke="#d8b08a" stroke-width="0.9"/>
+          <path d="M 134,214 Q 150,220 166,214" fill="none" stroke="#d8b08a" stroke-width="0.9"/>
+          <!-- MIDDLE cx=200 hw=16 tip=112 -->
+          <path d="M 184,370 L 184,128 Q 184,112 200,112 Q 216,112 216,128 L 216,370 Z"
+                fill="#f0dcc8" stroke="#c09870" stroke-width="1.5"/>
+          <path d="M 184,256 Q 200,262 216,256" fill="none" stroke="#d8b08a" stroke-width="0.9"/>
+          <path d="M 184,184 Q 200,190 216,184" fill="none" stroke="#d8b08a" stroke-width="0.9"/>
+          <!-- RING cx=250 hw=16 tip=138 -->
+          <path d="M 234,370 L 234,154 Q 234,138 250,138 Q 266,138 266,154 L 266,370 Z"
+                fill="#f0dcc8" stroke="#c09870" stroke-width="1.5"/>
+          <path d="M 234,270 Q 250,276 266,270" fill="none" stroke="#d8b08a" stroke-width="0.9"/>
+          <path d="M 234,204 Q 250,210 266,204" fill="none" stroke="#d8b08a" stroke-width="0.9"/>
+          <!-- CCW arrows: up index-left, arc right to middle, arc right to ring, down ring-right -->
+          <line x1="132" y1="358" x2="132" y2="164" stroke="#b83a24" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.55" marker-end="url(#ah1)"/>
+          <path d="M 166,142 Q 180,88 186,115" fill="none" stroke="#b83a24" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.55" marker-end="url(#ah1)"/>
+          <path d="M 216,114 Q 232,88 236,141" fill="none" stroke="#b83a24" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.55" marker-end="url(#ah1)"/>
+          <line x1="268" y1="151" x2="268" y2="358" stroke="#b83a24" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.55" marker-end="url(#ah1)"/>
+          <text x="200" y="97" text-anchor="middle" font-size="8.5" fill="#b83a24" opacity="0.65">← 逆時針 →</text>
+          <!-- 5 dots -->
+          <circle cx="150" cy="362" r="7" fill="#fef6e0" stroke="#9a7518" stroke-width="2"/>
+          <circle cx="150" cy="150" r="7" fill="#e4f0f8" stroke="#2a6080" stroke-width="2"/>
+          <circle cx="200" cy="112" r="7" fill="#fbe4e0" stroke="#b83a24" stroke-width="2"/>
+          <circle cx="250" cy="138" r="7" fill="#f5ede0" stroke="#705020" stroke-width="2"/>
+          <circle cx="250" cy="362" r="7" fill="#e4f0e4" stroke="#3a7040" stroke-width="2"/>
+          <!-- LEFT ②水食指尖 ①金食指根 -->
+          <line x1="133" y1="150" x2="74" y2="150" stroke="#2a6080" stroke-width="0.8" opacity="0.45"/>
+          <rect x="4" y="132" width="68" height="38" rx="4" fill="#e4f0f8" stroke="#2a6080" stroke-width="1.2"/>
+          <text x="38" y="152" text-anchor="middle" font-size="22" font-weight="bold" fill="#2a6080">水</text>
+          <text x="38" y="166" text-anchor="middle" font-size="7.5" fill="#2a6080">②食指尖</text>
+          <line x1="133" y1="362" x2="74" y2="362" stroke="#9a7518" stroke-width="0.8" opacity="0.45"/>
+          <rect x="4" y="340" width="68" height="38" rx="4" fill="#fef6e0" stroke="#9a7518" stroke-width="1.2"/>
+          <text x="38" y="360" text-anchor="middle" font-size="22" font-weight="bold" fill="#9a7518">金</text>
+          <text x="38" y="374" text-anchor="middle" font-size="7.5" fill="#9a7518">①食指根</text>
+          <!-- TOP ③火中指尖 -->
+          <line x1="200" y1="105" x2="200" y2="60" stroke="#b83a24" stroke-width="0.8" opacity="0.45"/>
+          <rect x="166" y="22" width="68" height="38" rx="4" fill="#fbe4e0" stroke="#b83a24" stroke-width="1.2"/>
+          <text x="200" y="42" text-anchor="middle" font-size="22" font-weight="bold" fill="#b83a24">火</text>
+          <text x="200" y="56" text-anchor="middle" font-size="7.5" fill="#b83a24">③中指尖</text>
+          <!-- RIGHT ④土無名指尖 ⑤木無名指根 -->
+          <line x1="257" y1="138" x2="272" y2="136" stroke="#705020" stroke-width="0.8" opacity="0.45"/>
+          <rect x="274" y="119" width="62" height="38" rx="4" fill="#f5ede0" stroke="#705020" stroke-width="1.2"/>
+          <text x="305" y="139" text-anchor="middle" font-size="22" font-weight="bold" fill="#705020">土</text>
+          <text x="305" y="153" text-anchor="middle" font-size="7.5" fill="#705020">④無名指尖</text>
+          <line x1="257" y1="362" x2="272" y2="362" stroke="#3a7040" stroke-width="0.8" opacity="0.45"/>
+          <rect x="274" y="340" width="62" height="38" rx="4" fill="#e4f0e4" stroke="#3a7040" stroke-width="1.2"/>
+          <text x="305" y="360" text-anchor="middle" font-size="22" font-weight="bold" fill="#3a7040">木</text>
+          <text x="305" y="374" text-anchor="middle" font-size="7.5" fill="#3a7040">⑤無名指根</text>
+          <text x="170" y="436" text-anchor="middle" font-size="9" fill="#867b6e" font-style="italic">左手掌心朝上</text>
+        </svg>
+      </figure>
+
+      <!-- ══ 圖二：天干位置 ══ -->
+      <figure style="margin:0;text-align:center">
+        <figcaption style="font-family:'Noto Sans TC',sans-serif;font-size:.7rem;letter-spacing:.28em;color:var(--ink-lt);margin-bottom:.6rem">圖二・天干位置</figcaption>
+        <svg width="340" height="440" viewBox="0 0 340 440" xmlns="http://www.w3.org/2000/svg" style="font-family:'Noto Sans TC',sans-serif;overflow:visible">
+          <defs>
+            <marker id="ah2" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto">
+              <path d="M0,0.5 L6,3.5 L0,6.5 Z" fill="#b83a24"/>
+            </marker>
+          </defs>
+          <!-- PALM -->
+          <path d="M 96,358 Q 74,366 66,388 Q 58,410 74,422 Q 94,430 200,432 Q 306,430 326,422 Q 342,410 334,388 Q 326,366 304,358 Z"
+                fill="#f0dcc8" stroke="#c09870" stroke-width="1.5"/>
+          <path d="M 100,390 Q 150,380 200,382 Q 250,384 300,392" fill="none" stroke="#d8b08a" stroke-width="0.8" opacity="0.45"/>
+          <!-- THUMB left side -->
+          <path d="M 95,376 Q 75,354 65,326 Q 55,298 62,274 Q 69,253 84,249 Q 100,247 110,264 Q 119,283 115,313 L 114,370"
+                fill="#f0dcc8" stroke="#c09870" stroke-width="1.5" stroke-linejoin="round"/>
+          <path d="M 67,302 Q 83,287 99,295" fill="none" stroke="#d8b08a" stroke-width="0.9"/>
+          <!-- PINKY right cx=296 hw=12 tip=214 -->
+          <path d="M 284,370 L 284,226 Q 284,214 296,214 Q 308,214 308,226 L 308,370 Z"
+                fill="#f0dcc8" stroke="#c09870" stroke-width="1.5"/>
+          <path d="M 284,262 Q 296,268 308,262" fill="none" stroke="#d8b08a" stroke-width="0.9"/>
+          <path d="M 284,240 Q 296,246 308,240" fill="none" stroke="#d8b08a" stroke-width="0.9"/>
+          <!-- INDEX cx=150 hw=16 tip=150 -->
+          <path d="M 134,370 L 134,166 Q 134,150 150,150 Q 166,150 166,166 L 166,370 Z"
+                fill="#f0dcc8" stroke="#c09870" stroke-width="1.5"/>
+          <path d="M 134,276 Q 150,282 166,276" fill="none" stroke="#d8b08a" stroke-width="0.9"/>
+          <path d="M 134,214 Q 150,220 166,214" fill="none" stroke="#d8b08a" stroke-width="0.9"/>
+          <!-- MIDDLE cx=200 hw=16 tip=112 -->
+          <path d="M 184,370 L 184,128 Q 184,112 200,112 Q 216,112 216,128 L 216,370 Z"
+                fill="#f0dcc8" stroke="#c09870" stroke-width="1.5"/>
+          <path d="M 184,256 Q 200,262 216,256" fill="none" stroke="#d8b08a" stroke-width="0.9"/>
+          <path d="M 184,184 Q 200,190 216,184" fill="none" stroke="#d8b08a" stroke-width="0.9"/>
+          <!-- RING cx=250 hw=16 tip=138 -->
+          <path d="M 234,370 L 234,154 Q 234,138 250,138 Q 266,138 266,154 L 266,370 Z"
+                fill="#f0dcc8" stroke="#c09870" stroke-width="1.5"/>
+          <path d="M 234,270 Q 250,276 266,270" fill="none" stroke="#d8b08a" stroke-width="0.9"/>
+          <path d="M 234,204 Q 250,210 266,204" fill="none" stroke="#d8b08a" stroke-width="0.9"/>
+          <!-- CCW arrows: up index-left, arc right to middle, arc right to ring, down ring-right -->
+          <line x1="132" y1="358" x2="132" y2="164" stroke="#b83a24" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.55" marker-end="url(#ah2)"/>
+          <path d="M 166,142 Q 180,88 186,115" fill="none" stroke="#b83a24" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.55" marker-end="url(#ah2)"/>
+          <path d="M 216,114 Q 232,88 236,141" fill="none" stroke="#b83a24" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.55" marker-end="url(#ah2)"/>
+          <line x1="268" y1="151" x2="268" y2="358" stroke="#b83a24" stroke-width="1.2" stroke-dasharray="5,3" opacity="0.55" marker-end="url(#ah2)"/>
+          <text x="200" y="97" text-anchor="middle" font-size="8.5" fill="#b83a24" opacity="0.65">← 逆時針 →</text>
+          <!-- 5 dots -->
+          <circle cx="150" cy="362" r="7" fill="#fef6e0" stroke="#9a7518" stroke-width="2"/>
+          <circle cx="150" cy="150" r="7" fill="#e4f0f8" stroke="#2a6080" stroke-width="2"/>
+          <circle cx="200" cy="112" r="7" fill="#fbe4e0" stroke="#b83a24" stroke-width="2"/>
+          <circle cx="250" cy="138" r="7" fill="#f5ede0" stroke="#705020" stroke-width="2"/>
+          <circle cx="250" cy="362" r="7" fill="#e4f0e4" stroke="#3a7040" stroke-width="2"/>
+          <!-- LEFT ②丙丁食指尖 ①甲乙食指根 -->
+          <line x1="133" y1="150" x2="74" y2="150" stroke="#2a6080" stroke-width="0.8" opacity="0.45"/>
+          <rect x="4" y="130" width="68" height="42" rx="4" fill="#e4f0f8" stroke="#2a6080" stroke-width="1.2"/>
+          <text x="38" y="149" text-anchor="middle" font-size="15" font-weight="bold" fill="#2a6080">丙丁</text>
+          <text x="38" y="167" text-anchor="middle" font-size="7.5" fill="#2a6080">水・②食指尖</text>
+          <line x1="133" y1="362" x2="74" y2="362" stroke="#9a7518" stroke-width="0.8" opacity="0.45"/>
+          <rect x="4" y="338" width="68" height="42" rx="4" fill="#fef6e0" stroke="#9a7518" stroke-width="1.2"/>
+          <text x="38" y="357" text-anchor="middle" font-size="15" font-weight="bold" fill="#9a7518">甲乙</text>
+          <text x="38" y="375" text-anchor="middle" font-size="7.5" fill="#9a7518">金・①食指根</text>
+          <!-- TOP ③戊己中指尖 -->
+          <line x1="200" y1="105" x2="200" y2="58" stroke="#b83a24" stroke-width="0.8" opacity="0.45"/>
+          <rect x="166" y="20" width="68" height="42" rx="4" fill="#fbe4e0" stroke="#b83a24" stroke-width="1.2"/>
+          <text x="200" y="39" text-anchor="middle" font-size="15" font-weight="bold" fill="#b83a24">戊己</text>
+          <text x="200" y="57" text-anchor="middle" font-size="7.5" fill="#b83a24">火・③中指尖</text>
+          <!-- RIGHT ④庚辛無名指尖 ⑤壬癸無名指根 -->
+          <line x1="257" y1="138" x2="272" y2="136" stroke="#705020" stroke-width="0.8" opacity="0.45"/>
+          <rect x="274" y="117" width="62" height="42" rx="4" fill="#f5ede0" stroke="#705020" stroke-width="1.2"/>
+          <text x="305" y="136" text-anchor="middle" font-size="15" font-weight="bold" fill="#705020">庚辛</text>
+          <text x="305" y="154" text-anchor="middle" font-size="7.5" fill="#705020">土・④無名指尖</text>
+          <line x1="257" y1="362" x2="272" y2="362" stroke="#3a7040" stroke-width="0.8" opacity="0.45"/>
+          <rect x="274" y="338" width="62" height="42" rx="4" fill="#e4f0e4" stroke="#3a7040" stroke-width="1.2"/>
+          <text x="305" y="357" text-anchor="middle" font-size="15" font-weight="bold" fill="#3a7040">壬癸</text>
+          <text x="305" y="375" text-anchor="middle" font-size="7.5" fill="#3a7040">木・⑤無名指根</text>
+          <text x="170" y="436" text-anchor="middle" font-size="9" fill="#867b6e" font-style="italic">左手掌心朝上</text>
+        </svg>
+      </figure>
+
+      <!-- Step instructions -->
+      <div class="box" style="width:100%;max-width:580px">
+        <strong>掌中訣三步推命局：</strong><br><br>
+        <strong>步驟一</strong>｜用命宮天干，找到在手指上的位置<br>
+        &emsp;逆時針五位：①甲乙（金）→ ②丙丁（水）→ ③戊己（火）→ ④庚辛（土）→ ⑤壬癸（木）<br><br>
+        <strong>步驟二</strong>｜從天干位置逆時針數命宮地支的步數：<br>
+        &emsp;<strong>子・丑 ＝ 0步</strong>（不動）　<strong>寅・卯 ＝ 1步</strong>　<strong>辰・巳 ＝ 2步</strong><br>
+        &emsp;<strong>午・未 ＝ 0步</strong>（不動）　<strong>申・酉 ＝ 1步</strong>　<strong>戌・亥 ＝ 2步</strong><br>
+        &emsp;<small style="color:var(--ink-lt)">（兩兩一對，只在三個指位間逆時針輪流，數完二宮就循環）</small><br><br>
+        <strong>步驟三</strong>｜落點五行 ＝ <span style="color:var(--red)">命局</span><br><br>
+        <span style="color:var(--ink-lt)">驗算：</span>
+        甲子 → ①金＋0步 ＝ <strong>金四局</strong> ✓　
+        甲寅 → ①金＋1步 ＝ <strong>水二局</strong> ✓<br>
+        甲辰 → ①金＋2步 ＝ <strong>火六局</strong> ✓　
+        丙辰 → ②水＋2步 ＝ <strong>土五局</strong> ✓
+      </div>
+    </div>
+    <div class="box" style="font-size:.85rem">
+      <strong>水二、火六——為何不用水一、火二？</strong><br>
+      「一」是太極（未分陰陽），命盤是已分陰陽的世界，從二起算。<br>
+      水火易位：夏至（火最旺）時太陽照在南回歸線（水），火取水的數字「六」；冬至（水最旺）時太陽照在北回歸線（火），水取火的數字「二」。
+    </div>
+  </div>
+
+  <div id="ch5-stars" class="blk fi">
+    <div class="blk-title">紫微系與天府系：命盤的兩大支柱</div>
+    <div class="grid">
+      <div class="card" style="border-top:2px solid #4a6090">
+        <div class="card-lbl">北斗系・精神主軸</div>
+        <div class="card-val">紫微星</div>
+        <div class="card-desc">由納音決定位置。紫微在子，貪狼必在午（子午對宮）。帶9曜，首重「天罡」義，是命盤的太極定錨點。</div>
+      </div>
+      <div class="card" style="border-top:2px solid #5a8040">
+        <div class="card-lbl">南斗系・物質庫藏</div>
+        <div class="card-val">天府星</div>
+        <div class="card-desc">紫微定位後同步定位。帶南斗諸星，首重「罫（卦）」義，對應生老病死，即中醫之學。</div>
+      </div>
+    </div>
+    <div class="box">
+      太陽 → 主<strong>時辰</strong>，右轉（逆行），屬紫微系<br>
+      太陰（月亮）→ 主<strong>月令</strong>（月份），左旋（順行），屬天府系<br><br>
+      斗數是中醫、地理、命理——<strong>三才</strong>之學。
+    </div>
+  </div>
+
+  <div id="ch5-zi" class="blk fi">
+    <div class="blk-title">子時換日的正確規則</div>
+    <div class="tbl"><table>
+      <thead><tr><th>時段</th><th>名稱</th><th>正確算法</th></tr></thead>
+      <tbody>
+        <tr><td class="td-k">晚上 11:00–12:00</td><td>夜子時</td><td class="td-g">當天（天心未改移）</td></tr>
+        <tr><td class="td-k">凌晨 12:00 以後</td><td>早子時</td><td class="td-g">隔天</td></tr>
+      </tbody>
+    </table></div>
+    <div class="warn"><div class="lbl">⚠ 常見錯誤</div>很多排盤軟體把「11點以後」都推到隔天，作者認為這是<strong>錯誤的</strong>。分界點是午夜12點，不是11點。「夜子之鄉，天心未改移。」</div>
+  </div>
+</section>
+
+<!-- 結語 -->
+<section id="epilogue" class="sec-wrap">
+  <div class="ch-hd fi">
+    <div class="ch-num">結語</div>
+    <h2 class="ch-title">諸緒的收攏</h2>
+    <div class="ch-rule"><div class="rule-line"></div><div class="rule-dot"></div></div>
+    <p class="ch-sub">它們是同一套系統的不同切面，從同一個根長出來，最終匯入同一張命盤</p>
+  </div>
+
+  <div class="blk fi">
+    <p>諸緒讀完，你學了一堆看似獨立的東西：河圖、洛書、節氣、月體納甲、五虎遁、納音……</p>
+    <p>它們不是各自獨立的知識。它們是同一套系統的不同切面，從同一個根長出來，最終匯入同一張命盤。</p>
+  </div>
+
+  <div class="blk fi">
+    <div class="blk-title">一張圖，看見所有碎片如何收攏</div>
+    <!-- 諸緒收攏圖 SVG -->
+    <div style="overflow-x:auto;display:flex;justify-content:center;margin:1.5rem 0">
+    <svg viewBox="0 0 620 860" width="100%" style="max-width:580px;font-family:'Noto Serif TC','Noto Sans TC',serif" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <marker id="arr" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+          <path d="M1,1 L6,3.5 L1,6 Z" fill="#6b4c2a"/>
+        </marker>
+        <marker id="arr-gold" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+          <path d="M1,1 L6,3.5 L1,6 Z" fill="#9a7518"/>
+        </marker>
+      </defs>
+
+      <!-- ═══ LEFT COLUMN: 河圖數字 ═══ -->
+
+      <!-- 河圖數字 root box -->
+      <rect x="60" y="20" width="160" height="44" rx="6" fill="#4a2e12" stroke="none"/>
+      <text x="140" y="47" text-anchor="middle" font-size="16" font-weight="700" fill="#f4efe5">河圖數字</text>
+
+      <!-- branch lines from 河圖數字 down to 3 children -->
+      <!-- vertical stem -->
+      <line x1="140" y1="64" x2="140" y2="90" stroke="#6b4c2a" stroke-width="1.5"/>
+      <!-- horizontal bar -->
+      <line x1="55" y1="90" x2="310" y2="90" stroke="#6b4c2a" stroke-width="1.5"/>
+      <!-- drops to each child -->
+      <line x1="55"  y1="90" x2="55"  y2="108" stroke="#6b4c2a" stroke-width="1.5" marker-end="url(#arr)"/>
+      <line x1="182" y1="90" x2="182" y2="108" stroke="#6b4c2a" stroke-width="1.5" marker-end="url(#arr)"/>
+      <line x1="310" y1="90" x2="310" y2="108" stroke="#6b4c2a" stroke-width="1.5" marker-end="url(#arr)"/>
+
+      <!-- 奇數 -->
+      <rect x="10" y="108" width="90" height="42" rx="5" fill="#7a4520" stroke="none"/>
+      <text x="55" y="133" text-anchor="middle" font-size="14" font-weight="600" fill="#f4efe5">奇數</text>
+      <text x="55" y="162" text-anchor="middle" font-size="10" fill="#867b6e">3·5·7·9·1</text>
+
+      <!-- 成數 -->
+      <rect x="137" y="108" width="90" height="42" rx="5" fill="#7a4520" stroke="none"/>
+      <text x="182" y="133" text-anchor="middle" font-size="14" font-weight="600" fill="#f4efe5">成數</text>
+      <text x="182" y="162" text-anchor="middle" font-size="10" fill="#867b6e">6·7·8·9</text>
+
+      <!-- 大衍之數 -->
+      <rect x="265" y="108" width="90" height="42" rx="5" fill="#7a4520" stroke="none"/>
+      <text x="310" y="128" text-anchor="middle" font-size="14" font-weight="600" fill="#f4efe5">大衍之數</text>
+      <text x="310" y="145" text-anchor="middle" font-size="10" fill="#f4c97a">天五 × 地十</text>
+
+      <!-- arrows down to tier 3 -->
+      <line x1="55"  y1="150" x2="55"  y2="168" stroke="#6b4c2a" stroke-width="1.5" marker-end="url(#arr)"/>
+      <line x1="182" y1="150" x2="182" y2="168" stroke="#6b4c2a" stroke-width="1.5" marker-end="url(#arr)"/>
+      <line x1="310" y1="150" x2="310" y2="168" stroke="#6b4c2a" stroke-width="1.5" marker-end="url(#arr)"/>
+
+      <!-- 五虎遁 -->
+      <rect x="10" y="168" width="90" height="36" rx="5" fill="#c47a30" stroke="none"/>
+      <text x="55" y="191" text-anchor="middle" font-size="13" font-weight="600" fill="#fff8ee">五虎遁</text>
+
+      <!-- 月體納甲 -->
+      <rect x="137" y="168" width="90" height="36" rx="5" fill="#c47a30" stroke="none"/>
+      <text x="182" y="191" text-anchor="middle" font-size="13" font-weight="600" fill="#fff8ee">月體納甲</text>
+
+      <!-- 納音 -->
+      <rect x="265" y="168" width="90" height="36" rx="5" fill="#c47a30" stroke="none"/>
+      <text x="310" y="191" text-anchor="middle" font-size="13" font-weight="600" fill="#fff8ee">納音</text>
+
+      <!-- arrows to tier 4 -->
+      <line x1="55"  y1="204" x2="55"  y2="222" stroke="#6b4c2a" stroke-width="1.5" marker-end="url(#arr)"/>
+      <line x1="182" y1="204" x2="182" y2="222" stroke="#6b4c2a" stroke-width="1.5" marker-end="url(#arr)"/>
+      <line x1="310" y1="204" x2="310" y2="222" stroke="#6b4c2a" stroke-width="1.5" marker-end="url(#arr)"/>
+
+      <!-- 各月月干 -->
+      <rect x="10" y="222" width="90" height="36" rx="5" fill="#f4efe5" stroke="#7a4520" stroke-width="1.5"/>
+      <text x="55" y="245" text-anchor="middle" font-size="13" fill="#4a2e12">各月月干</text>
+
+      <!-- 四化 -->
+      <rect x="137" y="222" width="90" height="50" rx="5" fill="#f4efe5" stroke="#7a4520" stroke-width="1.5"/>
+      <text x="182" y="243" text-anchor="middle" font-size="13" fill="#4a2e12">四化</text>
+      <text x="182" y="262" text-anchor="middle" font-size="10" fill="#867b6e">祿·權·科·忌</text>
+
+      <!-- 命局 -->
+      <rect x="265" y="222" width="90" height="36" rx="5" fill="#f4efe5" stroke="#7a4520" stroke-width="1.5"/>
+      <text x="310" y="245" text-anchor="middle" font-size="13" fill="#4a2e12">命局</text>
+
+      <!-- arrows to tier 5 -->
+      <line x1="55"  y1="258" x2="55"  y2="276" stroke="#6b4c2a" stroke-width="1.5" marker-end="url(#arr)"/>
+      <!-- 四化 has no arrow down (it's a final output) -->
+      <line x1="310" y1="258" x2="310" y2="276" stroke="#6b4c2a" stroke-width="1.5" marker-end="url(#arr)"/>
+
+      <!-- 命宮天干 -->
+      <rect x="10" y="276" width="90" height="36" rx="5" fill="#4a2e12" stroke="none"/>
+      <text x="55" y="299" text-anchor="middle" font-size="13" font-weight="600" fill="#f4efe5">命宮天干</text>
+
+      <!-- 紫微星落宮 -->
+      <rect x="255" y="276" width="110" height="36" rx="5" fill="#4a2e12" stroke="none"/>
+      <text x="310" y="299" text-anchor="middle" font-size="13" font-weight="600" fill="#f4efe5">紫微星落宮</text>
+
+      <!-- ═══ RIGHT COLUMN: 太陽 ═══ -->
+
+      <!-- dashed divider -->
+      <line x1="405" y1="20" x2="405" y2="330" stroke="#c4b89a" stroke-width="1" stroke-dasharray="5,4"/>
+
+      <!-- 太陽 root box -->
+      <rect x="430" y="20" width="160" height="44" rx="6" fill="#4a2e12" stroke="none"/>
+      <text x="510" y="47" text-anchor="middle" font-size="16" font-weight="700" fill="#f4efe5">太陽</text>
+
+      <!-- 節氣・四季 -->
+      <line x1="510" y1="64" x2="510" y2="78" stroke="#6b4c2a" stroke-width="1.5" marker-end="url(#arr)"/>
+      <rect x="430" y="78" width="160" height="36" rx="5" fill="#c47a30" stroke="none"/>
+      <text x="510" y="101" text-anchor="middle" font-size="13" font-weight="600" fill="#fff8ee">節氣・四季</text>
+
+      <!-- 建月在寅・閏月 -->
+      <line x1="510" y1="114" x2="510" y2="128" stroke="#6b4c2a" stroke-width="1.5" marker-end="url(#arr)"/>
+      <rect x="430" y="128" width="160" height="36" rx="5" fill="#c47a30" stroke="none"/>
+      <text x="510" y="151" text-anchor="middle" font-size="13" font-weight="600" fill="#fff8ee">建月在寅・閏月</text>
+
+      <!-- 農曆月份地支確立 -->
+      <line x1="510" y1="164" x2="510" y2="178" stroke="#6b4c2a" stroke-width="1.5" marker-end="url(#arr)"/>
+      <rect x="430" y="178" width="160" height="36" rx="5" fill="#c47a30" stroke="none"/>
+      <text x="510" y="201" text-anchor="middle" font-size="12" font-weight="600" fill="#fff8ee">農曆月份地支確立</text>
+
+      <!-- 生月＋生時 -->
+      <line x1="510" y1="214" x2="510" y2="228" stroke="#6b4c2a" stroke-width="1.5" marker-end="url(#arr)"/>
+      <rect x="430" y="228" width="160" height="36" rx="5" fill="#f4efe5" stroke="#7a4520" stroke-width="1.5"/>
+      <text x="510" y="251" text-anchor="middle" font-size="13" fill="#4a2e12">生月 ＋ 生時</text>
+
+      <!-- 命宮位置（地支） -->
+      <line x1="510" y1="264" x2="510" y2="278" stroke="#6b4c2a" stroke-width="1.5" marker-end="url(#arr)"/>
+      <rect x="430" y="278" width="160" height="36" rx="5" fill="#4a2e12" stroke="none"/>
+      <text x="510" y="301" text-anchor="middle" font-size="13" font-weight="600" fill="#f4efe5">命宮位置（地支）</text>
+
+      <!-- 命宮天干＋命宮位置＝完整命宮 summary box -->
+      <rect x="425" y="328" width="170" height="52" rx="5" fill="none" stroke="#9a7518" stroke-width="1.5" stroke-dasharray="4,3"/>
+      <text x="510" y="350" text-anchor="middle" font-size="11" fill="#9a7518">命宮天干 ＋ 命宮位置</text>
+      <text x="510" y="368" text-anchor="middle" font-size="11" fill="#9a7518">＝ 完整命宮</text>
+
+      <!-- ═══ CONVERGE: 全部匯聚 ═══ -->
+
+      <!-- lines from 命宮天干 and 紫微星落宮 and 四化 down to converge point -->
+      <!-- left side outputs converge -->
+      <line x1="55"  y1="312" x2="55"  y2="390" stroke="#6b4c2a" stroke-width="1.5"/>
+      <line x1="182" y1="272" x2="182" y2="390" stroke="#6b4c2a" stroke-width="1.5"/>
+      <line x1="310" y1="312" x2="310" y2="390" stroke="#6b4c2a" stroke-width="1.5"/>
+      <!-- right side -->
+      <line x1="510" y1="314" x2="510" y2="390" stroke="#6b4c2a" stroke-width="1.5"/>
+      <!-- horizontal collector -->
+      <line x1="55" y1="390" x2="510" y2="390" stroke="#6b4c2a" stroke-width="1.5"/>
+      <!-- drop to 全部匯聚 -->
+      <line x1="282" y1="390" x2="282" y2="408" stroke="#6b4c2a" stroke-width="1.5" marker-end="url(#arr)"/>
+
+      <!-- 全部匯聚 -->
+      <ellipse cx="282" cy="425" rx="72" ry="24" fill="#f4efe5" stroke="#7a4520" stroke-width="1.5"/>
+      <text x="282" y="430" text-anchor="middle" font-size="14" fill="#4a2e12">全部匯聚</text>
+
+      <!-- 5 output circles -->
+      <!-- positions: 85, 175, 282, 385, 475 at y=510 -->
+      <!-- lines from 全部匯聚 -->
+      <line x1="282" y1="449" x2="282" y2="465" stroke="#6b4c2a" stroke-width="1.5"/>
+      <line x1="282" y1="465" x2="85"  y2="465" stroke="#6b4c2a" stroke-width="1.5"/>
+      <line x1="282" y1="465" x2="175" y2="465" stroke="#6b4c2a" stroke-width="1.5"/>
+      <line x1="282" y1="465" x2="385" y2="465" stroke="#6b4c2a" stroke-width="1.5"/>
+      <line x1="282" y1="465" x2="475" y2="465" stroke="#6b4c2a" stroke-width="1.5"/>
+      <line x1="85"  y1="465" x2="85"  y2="483" stroke="#6b4c2a" stroke-width="1.5" marker-end="url(#arr)"/>
+      <line x1="175" y1="465" x2="175" y2="483" stroke="#6b4c2a" stroke-width="1.5" marker-end="url(#arr)"/>
+      <line x1="282" y1="465" x2="282" y2="483" stroke="#6b4c2a" stroke-width="1.5" marker-end="url(#arr)"/>
+      <line x1="385" y1="465" x2="385" y2="483" stroke="#6b4c2a" stroke-width="1.5" marker-end="url(#arr)"/>
+      <line x1="475" y1="465" x2="475" y2="483" stroke="#6b4c2a" stroke-width="1.5" marker-end="url(#arr)"/>
+
+      <!-- circle: 命宮天干 -->
+      <circle cx="85" cy="510" r="38" fill="#c47a30" stroke="none"/>
+      <text x="85" y="506" text-anchor="middle" font-size="12" font-weight="600" fill="#fff8ee">命宮</text>
+      <text x="85" y="522" text-anchor="middle" font-size="12" font-weight="600" fill="#fff8ee">天干</text>
+
+      <!-- circle: 四化 -->
+      <circle cx="175" cy="510" r="38" fill="#c47a30" stroke="none"/>
+      <text x="175" y="503" text-anchor="middle" font-size="12" font-weight="600" fill="#fff8ee">四化</text>
+      <text x="175" y="518" text-anchor="middle" font-size="10" fill="#ffe0a0">祿·權</text>
+      <text x="175" y="531" text-anchor="middle" font-size="10" fill="#ffe0a0">科·忌</text>
+
+      <!-- circle: 命局 (larger, centre) -->
+      <circle cx="282" cy="510" r="44" fill="#8b4513" stroke="none"/>
+      <text x="282" y="516" text-anchor="middle" font-size="15" font-weight="700" fill="#fff8ee">命局</text>
+
+      <!-- circle: 紫微星落宮 -->
+      <circle cx="385" cy="510" r="38" fill="#c47a30" stroke="none"/>
+      <text x="385" y="506" text-anchor="middle" font-size="12" font-weight="600" fill="#fff8ee">紫微星</text>
+      <text x="385" y="522" text-anchor="middle" font-size="12" font-weight="600" fill="#fff8ee">落宮</text>
+
+      <!-- circle: 命宮位置 -->
+      <circle cx="475" cy="510" r="38" fill="#3a6b40" stroke="none"/>
+      <text x="475" y="503" text-anchor="middle" font-size="12" font-weight="600" fill="#fff8ee">命宮位置</text>
+      <text x="475" y="519" text-anchor="middle" font-size="11" fill="#c8f0cc">（地支）</text>
+
+      <!-- arrow down to 整張命盤 -->
+      <line x1="282" y1="554" x2="282" y2="578" stroke="#6b4c2a" stroke-width="2" marker-end="url(#arr)"/>
+
+      <!-- 整張命盤 -->
+      <rect x="95" y="578" width="375" height="60" rx="8" fill="#2a4a20" stroke="#9a7518" stroke-width="2"/>
+      <text x="282" y="617" text-anchor="middle" font-size="24" font-weight="700" fill="#f4efe5" letter-spacing="4">整張命盤</text>
+
+      <!-- sub caption -->
+      <text x="282" y="660" text-anchor="middle" font-size="12" fill="#867b6e">河圖數字三線 ＋ 太陽一線 ＝ 完整收攏</text>
+
+      <!-- bottom quote box -->
+      <rect x="80" y="678" width="404" height="58" rx="6" fill="#f4efe5" stroke="#c4b89a" stroke-width="1"/>
+      <text x="282" y="702" text-anchor="middle" font-size="12" fill="#4a2e12">全部收攏，方成整張命盤</text>
+      <text x="282" y="722" text-anchor="middle" font-size="12" fill="#867b6e">萬象成局，命理自明</text>
+
+    </svg>
+    </div>
+  </div>
+
+  <div class="blk fi">
+    <div class="blk-title">三條線，各司其職</div>
+    <div class="tbl"><table>
+      <thead><tr><th>線</th><th>路徑</th><th>最終作用</th></tr></thead>
+      <tbody>
+        <tr><td class="td-k">河圖左支</td><td>奇數（3,5,7,9,1）→ 五虎遁 → 各月月干</td><td>命宮的<strong>天干</strong></td></tr>
+        <tr><td class="td-k">河圖中支</td><td>成數（6,7,8,9）→ 月體納甲 → 四化</td><td>祿・權・科・忌</td></tr>
+        <tr><td class="td-k">河圖右支</td><td>大衍之數（天五×地十=50）→ 納音 → 命局</td><td>紫微星<strong>落宮</strong></td></tr>
+        <tr><td class="td-k td-r">太陽那條線</td><td>節氣・建月在寅・閏月 → 農曆框架 → 生月＋生時</td><td>命宮的<strong>位置</strong>（地支）</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="blk fi">
+    <div class="blk-title">命宮是兩件事合成的</div>
+    <div class="grid" style="grid-template-columns:1fr 1fr">
+      <div class="card"><div class="card-lbl">命宮的位置（在哪個宮）</div><div class="card-val" style="font-size:.95rem">生月地支 ＋ 生時</div><div class="card-desc">太陽建立的農曆框架是前提</div></div>
+      <div class="card"><div class="card-lbl">命宮的天干</div><div class="card-val" style="font-size:.95rem">五虎遁從年干推算</div><div class="card-desc">河圖奇數決定的</div></div>
+    </div>
+    <p style="margin-top:1rem">兩者合一，命宮才完整。這是為什麼五虎遁和農曆曆法都不可缺的原因。</p>
+  </div>
+
+  <div class="fi" style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--border)">
+    <div class="blk-title">諸緒不是前言，是程式碼</div>
+    <p>讀完諸緒，你知道的不只是「有這些東西」，而是<strong>每一條規則從哪裡來</strong>：</p>
+    <div class="tbl" style="margin:1rem 0"><table>
+      <tbody>
+        <tr><td class="td-k">五虎遁為什麼從丙寅起</td><td>河圖奇數的排列決定的</td></tr>
+        <tr><td class="td-k">農曆為什麼有閏月</td><td>太陽年和月亮月之間的差距補回來</td></tr>
+        <tr><td class="td-k">月體納甲為什麼這樣對應</td><td>月亮在天空的實際位置觀測出來的</td></tr>
+        <tr><td class="td-k">四化為什麼是祿權科忌</td><td>河圖成數的奇偶分組決定的</td></tr>
+        <tr><td class="td-k">納音為什麼能決定命局</td><td>大衍之數的計算結構</td></tr>
+      </tbody>
+    </table></div>
+    <div class="pb">
+      <div class="pb-stamp">收攏</div>
+      <div class="pb-head">諸緒是整套斗數的程式碼。正文是它跑起來之後的樣子。</div>
+      <p>進入正文，你學的不是一套待記憶的規則，而是一套你已經知道根源的系統。</p>
+    </div>
+  </div>
+</section>
+
+<!-- 五虎遁完整歸納 -->
+<section id="wuhudun" class="sec-wrap alt">
+  <div class="ch-hd fi">
+    <div class="ch-num">補充・諸緒</div>
+    <h2 class="ch-title">五虎遁完整歸納</h2>
+    <div class="ch-rule"><div class="rule-line"></div><div class="rule-dot"></div></div>
+    <p class="ch-sub">原名「五平冠蓋」，冠蓋即立寅——由生年天干決定農曆正月月干，後續各月依序遞推</p>
+  </div>
+
+  <!-- WHAT -->
+  <div class="blk fi">
+    <div class="blk-title">What：五虎遁是什麼</div>
+    <div class="tbl"><table>
+      <thead><tr><th>生年天干</th><th>正月月干</th><th>口訣</th></tr></thead>
+      <tbody>
+        <tr><td class="td-k">甲・己年</td><td class="td-r">丙寅</td><td>甲己之年丙作首</td></tr>
+        <tr><td class="td-k">乙・庚年</td><td class="td-r">戊寅</td><td>乙庚之年戊為頭</td></tr>
+        <tr><td class="td-k">丙・辛年</td><td class="td-r">庚寅</td><td>丙辛之年庚寅首</td></tr>
+        <tr><td class="td-k">丁・壬年</td><td class="td-r">壬寅</td><td>丁壬之年壬寅流</td></tr>
+        <tr><td class="td-k">戊・癸年</td><td class="td-r">甲寅</td><td>戊癸之年甲寅頭</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <!-- WHY -->
+  <div class="blk fi">
+    <div class="blk-title">Why：為什麼排盤需要五虎遁</div>
+    <p>農曆月份的<strong>地支永遠固定</strong>（正月=寅、二月=卯……），不需要推算。需要推算的是每個月的<strong>天干</strong>。沒有月份天干，就沒有完整的月柱；沒有月柱，就找不到命宮；找不到命宮，整張盤無從排起。</p>
+    <div class="box" style="margin:1rem 0">
+      生年天干 →（五虎遁）→ 各月天干確定，月柱完整<br>
+      → 生月 ＋ 生時 → 找到命宮 → 整張命盤才能排出<br><br>
+      <strong>五虎遁是命盤的地基，是排盤的第一把鑰匙。</strong>
+    </div>
+    <div class="blk-title" style="margin-top:1.5rem;font-size:.92rem">延伸：來因宮</div>
+    <p>五虎遁推算出各月月柱後，命盤中<strong>天干與生年天干相同的那個宮位</strong>，就是「<strong>來因宮</strong>」（欽天門概念）——「緣何而來」，這輩子你是來做什麼的。生年四化就施作在這個宮位上。</p>
+    <p>以<strong>甲年</strong>為例：五虎遁推出正月是丙寅，依序遞推至九月天干回到甲 → <strong>甲戌</strong> → 來因宮在<strong>戌</strong>。</p>
+    <div class="tbl"><table>
+      <thead><tr><th>生年天干</th><th>來因宮</th><th>生年天干</th><th>來因宮</th></tr></thead>
+      <tbody>
+        <tr><td class="td-k">甲</td><td>戌</td><td class="td-k">己</td><td>巳</td></tr>
+        <tr><td class="td-k">乙</td><td>酉</td><td class="td-k">庚</td><td>辰</td></tr>
+        <tr><td class="td-k">丙</td><td>申</td><td class="td-k">辛</td><td>卯</td></tr>
+        <tr><td class="td-k">丁</td><td>未</td><td class="td-k">壬</td><td>寅</td></tr>
+        <tr><td class="td-k">戊</td><td>午</td><td class="td-k">癸</td><td>亥</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <!-- HOW: 3 paths -->
+  <div class="blk fi">
+    <div class="blk-title">How：三條推導路徑</div>
+
+    <div class="pb" style="margin-bottom:1.5rem">
+      <div class="pb-stamp">路徑 A</div>
+      <div class="pb-head">河圖數字純推導（作者認為的根源）</div>
+      <p>天干對應河圖數字（甲=1…癸=10）；配對規則「差5是一對」；五對年干各取「下一個奇數」為正月月干。</p>
+      <p style="margin-top:.5rem">公式：<strong>第n對的起始月干數字 ＝ 2n＋1（超過10減10）</strong><br>
+      五個起始月干之和：3＋5＋7＋9＋1 ＝ <strong>25</strong> ＝ 河圖奇數總和 ＝ 大衍之數50的一半。全程無五行，數字本身就是答案。</p>
+    </div>
+
+    <div class="pb" style="margin-bottom:1.5rem">
+      <div class="pb-stamp">路徑 B</div>
+      <div class="pb-head">月體納甲推導（從泰卦出發）</div>
+      <p>泰卦（上坤下乾）→ 下乾代表「命」，命從寅起；乾之三子中，<strong>艮納丙，艮在寅位</strong> → 寅位天干是丙。</p>
+      <p style="margin-top:.5rem">乾納甲（甲是天干之首）→ 甲年＝乾當道之年 → 甲年寅位＝艮＝納丙 → <span style="color:var(--red)">甲年正月天干＝丙 ✓</span><br>
+      路徑B與路徑A結果完全一致，是獨立的第二條印證。</p>
+    </div>
+
+    <div class="pb">
+      <div class="pb-stamp">路徑 C</div>
+      <div class="pb-head">六十甲子的哲學解釋（解釋來因宮的意義，不推導月干）</div>
+      <p>六十甲子從甲子起，走過十天干（甲→癸）＝胎中十個月。出生那一刻＝<strong>甲戌</strong>（第11個）：天干重回甲，地支已從子偏移到戌 → 先天結束、後天開始的交界。</p>
+      <p style="margin-top:.5rem">五虎遁算出甲年第九個月的月柱是「甲戌」，恰好就是六十甲子裡「出生那一刻」的位置。路徑C不推導月干，它解釋<strong>為什麼那個位置叫來因宮</strong>。</p>
+    </div>
+
+    <div class="tbl" style="margin-top:1.5rem"><table>
+      <thead><tr><th>路徑</th><th>性質</th><th>結論</th></tr></thead>
+      <tbody>
+        <tr><td class="td-k">A</td><td>✅ 嚴格可驗算</td><td>公式 2n+1，五組全符合口訣，無例外</td></tr>
+        <tr><td class="td-k">B</td><td>✅ 邏輯自洽</td><td>月體納甲獨立推導，結果與路徑A完全一致</td></tr>
+        <tr><td class="td-k">C</td><td>ℹ️ 哲學性解釋</td><td>不推導月干，解釋來因宮的哲學意義</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <!-- 五行連結 -->
+  <div class="blk fi">
+    <div class="blk-title">五行連結（另一套理解語言，結果相同）</div>
+    <p>五虎遁本身不用五行推導（路徑A是純數字），但五行提供了另一套理解語言：</p>
+    <p style="font-size:.85rem;color:var(--ink-lt);margin:.4rem 0 1rem">年干五合 → 合化五行 → 找生母（能生出它的五行）→ 生母的陽干 ＝ 正月月干</p>
+    <div class="tbl"><table>
+      <thead><tr><th>年干</th><th>天干五合</th><th>合化</th><th>正月月干</th><th>相生關係</th></tr></thead>
+      <tbody>
+        <tr><td class="td-k">甲・己</td><td>甲己合</td><td>土</td><td class="td-r">丙（火）</td><td>火生土 ✓</td></tr>
+        <tr><td class="td-k">乙・庚</td><td>乙庚合</td><td>金</td><td class="td-r">戊（土）</td><td>土生金 ✓</td></tr>
+        <tr><td class="td-k">丙・辛</td><td>丙辛合</td><td>水</td><td class="td-r">庚（金）</td><td>金生水 ✓</td></tr>
+        <tr><td class="td-k">丁・壬</td><td>丁壬合</td><td>木</td><td class="td-r">壬（水）</td><td>水生木 ✓</td></tr>
+        <tr><td class="td-k">戊・癸</td><td>戊癸合</td><td>火</td><td class="td-r">甲（木）</td><td>木生火 ✓</td></tr>
+      </tbody>
+    </table></div>
+    <div class="warn" style="margin-top:1rem"><div class="lbl">作者立場</div>五行是翻譯語言，河圖數字才是根源；但兩種都可以用來理解和記憶。五行相生循環完整封閉：火→土→金→水→木→火。</div>
+  </div>
+</section>
+<footer style="text-align:center;padding:2.5rem 1.5rem;font-family:'Noto Sans TC',sans-serif;font-size:.7rem;color:var(--ink-lt);letter-spacing:.1em;border-top:1px solid var(--border)">
+  <div>內容來源：《紫微斗數悟（誤）我十八年》・蔡明宏（欽天門第三十六代傳人）著</div>
+  <div style="margin-top:.3rem;opacity:.5">讀後手記整理｜鄭菀之・2026</div>
+</footer>
+</main>
+
+<script>
+// Progress
+const prog = document.getElementById('prog');
+window.addEventListener('scroll', () => {
+  prog.style.transform = `scaleX(${window.scrollY/(document.documentElement.scrollHeight-window.innerHeight)})`;
+},{passive:true});
+
+// Mobile
+const sb = document.getElementById('sidebar');
+const ov = document.getElementById('ov');
+document.getElementById('mbtn').addEventListener('click',()=>{sb.classList.toggle('open');ov.classList.toggle('open')});
+ov.addEventListener('click',()=>{sb.classList.remove('open');ov.classList.remove('open')});
+document.querySelectorAll('.nav-item,.nav-sub').forEach(el=>el.addEventListener('click',()=>{if(window.innerWidth<=768){sb.classList.remove('open');ov.classList.remove('open')}}));
+
+// Fade-in
+const obs = new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')})},{threshold:.07,rootMargin:'0px 0px -20px 0px'});
+document.querySelectorAll('.fi').forEach(el=>obs.observe(el));
+
+// Loop
+const lobs = new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.querySelectorAll('.loop-step').forEach((s,i)=>setTimeout(()=>s.classList.add('vis'),i*150))})},{threshold:.05});
+document.querySelectorAll('#loopSteps').forEach(el=>lobs.observe(el));
+
+// Active nav
+const secs = [...document.querySelectorAll('section[id]')];
+const navs = document.querySelectorAll('.nav-item');
+function upNav(){
+  const m = window.scrollY + window.innerHeight*.35;
+  let cur='';
+  secs.forEach(s=>{if(s.offsetTop<=m)cur=s.id});
+  navs.forEach(n=>n.classList.toggle('active',n.getAttribute('href')==='#'+cur));
+}
+window.addEventListener('scroll',upNav,{passive:true});
+upNav();
+
+// Interactive moon phases
+const moonData = [
+  {name:'坤☷・晦月（三十）', icon:'🌑', detail:'<strong>月全隱沒</strong>——月亮和滿月走完全相同的天空路徑（東升、弧過北方、西落），但月面全黑，地球這側看不見。<br><br>天干：乙（外・東方・陰）・癸（內・北方・陰）<br>坤月和乾月走同一條路，一明一暗，天干陽陰翻轉：甲→乙、壬→癸。<br><br>坤是坤家族的父母卦（純陰），歸「下晦」組。'},
+  {name:'震☳・蛾眉月（初三）', icon:'🌒', detail:'<strong>蛾眉月初現</strong>——傍晚日落後，細月牙低掛西方天空，隨後沉入地平線。往西看就能找到它。<br><br>天干：<strong>庚</strong>（西方・陽干）<br>震是坤的長男（陽），取坤家族的陽干。西方陽干 = 庚。<br><br>震歸「下晦」組（坤家族）。雖然月相開始漸亮，但家族屬陰。'},
+  {name:'兌☱・上弦月（初八）', icon:'🌓', detail:'<strong>上弦月</strong>——正午升起，傍晚日落時到達最高點，位於正南方天空，傍晚到午夜可見。往南看就能找到它。<br><br>天干：<strong>丁</strong>（南方・陰干）<br>兌是乾的少女（陰），取乾家族的陰干。南方陰干 = 丁。<br><br>兌歸「上盈」組（乾家族）。'},
+  {name:'乾☰・滿月（十五）', icon:'🌕', detail:'<strong>滿月</strong>——日落時從正東方升起，整夜可見，清晨從西方落下。<br><br>天干：<strong>甲</strong>（外・東方升起・陽）・<strong>壬</strong>（內・北方弧線落下・陽）<br>乾是父卦（純陽），配兩個陽干，代表完整的一輪。<br>甲 = 滿月升起（正東），壬 = 落下路徑（北方弧線）。<br><br>乾歸「上盈」組，是整個系統最核心的配對（乾納甲），以「甲」命名整套「納甲」系統。'},
+  {name:'艮☶・下弦月（二十三）', icon:'🌗', detail:'<strong>下弦月</strong>——午夜後升起，清晨日出時到達最高點，位於正南方天空，後半夜到清晨可見。<br><br>天干：<strong>丙</strong>（南方・陽干）<br>艮是坤的少男（陽），取坤家族的陽干。南方陽干 = 丙。<br><br>初八兌丁和二十三艮丙是一對：都在南方，一個傍晚、一個清晨；一陰一陽，形成對稱。'},
+  {name:'巽☴・下蛾眉月（二十八）', icon:'🌘', detail:'<strong>下蛾眉月</strong>——日出前的清晨，出現在東方低空，極細且不易見到。<br><br>天干：<strong>辛</strong>（西方・陰干）<br>巽是乾的長女（陰），取乾家族的陰干。<br>巽和震是對稱的蛾眉月對（一盈一虧），震取庚（西、陽），巽取辛（西、陰）。<br><br>辛代表其「落下方向/歸宿」= 西方，而非可見方向。巽歸「上盈」組（乾家族）。'},
+];
+
+let activeId = null;
+document.querySelectorAll('.moon-card').forEach(card=>{
+  card.addEventListener('click',()=>{
+    const id = +card.dataset.id;
+    const detail = document.getElementById('moonDetail');
+    if(activeId===id){
+      card.classList.remove('active');
+      detail.classList.remove('show');
+      detail.innerHTML='';
+      activeId=null;
+    } else {
+      document.querySelectorAll('.moon-card').forEach(c=>c.classList.remove('active'));
+      card.classList.add('active');
+      const d = moonData[id];
+      detail.innerHTML = `<strong>${d.icon} ${d.name}</strong><br><br>${d.detail}`;
+      detail.classList.add('show');
+      activeId=id;
+    }
+  });
+});
+</script>
+</body>
+</html>
