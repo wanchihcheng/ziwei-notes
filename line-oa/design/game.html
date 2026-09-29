@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-Hant"><head><meta charset="utf-8"><title>攤位玩法</title>
+<html lang="zh-Hant"><head><meta charset="utf-8"><title>攤位互動</title>
 <link rel="stylesheet" href="common.css">
 <link href="https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:wght@300;400;500;700;900&family=Bodoni+Moda:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -12,8 +12,8 @@
 .icon{width:150px;height:180px;margin:0 auto 4px}
 .head h1{font-weight:900;font-size:64px;letter-spacing:.2em;padding-left:.2em}
 .head p{margin-top:10px;font-size:22px;font-weight:500;letter-spacing:.3em;padding-left:.3em;color:var(--violet-lt)}
-.list{position:absolute;left:100px;right:100px;top:440px;display:flex;flex-direction:column;gap:26px}
-.item{position:relative;display:flex;gap:32px;padding:32px 40px 30px;
+.list{position:absolute;left:100px;right:100px;top:430px;display:flex;flex-direction:column;gap:22px}
+.item{position:relative;display:flex;gap:32px;padding:28px 40px 26px;
   border:1px solid rgba(227,191,115,.4);background:linear-gradient(160deg,rgba(139,108,255,.13),rgba(20,15,42,.5) 60%)}
 .item::before{content:"";position:absolute;left:-1px;top:-1px;width:56px;height:3px;background:var(--gold)}
 .num{flex:none;width:72px;font-weight:600;font-size:56px;line-height:1}
@@ -21,6 +21,10 @@
 .body p{margin-top:12px;font-size:24px;line-height:1.7;letter-spacing:.06em;color:var(--ink)}
 .body .need{margin-top:12px;font-size:22px;letter-spacing:.06em;color:var(--gold)}
 .body .need::before{content:"";display:inline-block;width:8px;height:8px;margin-right:12px;transform:rotate(45deg) translateY(-3px);background:var(--gold)}
+.prizes{margin-top:14px;display:flex;flex-direction:column;gap:8px}
+.prizes div{display:grid;grid-template-columns:150px 1fr auto;align-items:baseline;gap:16px;font-size:22px;letter-spacing:.06em}
+.prizes b{font-weight:700;color:var(--gold)}
+.prizes em{font-style:normal;color:var(--ink-mid)}
 .foot{position:absolute;left:70px;right:70px;bottom:70px;display:flex;justify-content:space-between;align-items:baseline}
 .foot div{font-size:22px;font-weight:500;letter-spacing:.2em;color:var(--gold)}
 </style></head>
@@ -30,7 +34,7 @@
   <div class="frame"></div>
   <div class="head">
     <div class="icon" data-vane="classic"></div>
-    <h1 class="gold-text">攤位玩法</h1>
+    <h1 class="gold-text">攤位互動</h1>
     <p>欽天門紫微斗數・愛瑞卡 <span style="letter-spacing:.04em">Erica</span></p>
   </div>
   <div class="list">
@@ -46,7 +50,12 @@
       <div class="num gold-text">02</div>
       <div class="body">
         <h2>命運一番賞</h2>
-        <p>加入 LINE 官方帳號好友，即可抽獎！<br>大獎是價值 NT$3,000 的紫微斗數解盤。</p>
+        <p>加入 LINE 官方帳號好友，即可抽一次！</p>
+        <div class="prizes">
+          <div><b>A 賞</b><span>一小時紫微斗數諮詢</span><em>價值 NT$3,000</em></div>
+          <div><b>B・C・D 賞</b><span>半小時紫微斗數諮詢</span><em>價值 NT$1,800</em></div>
+          <div><b>E 賞</b><span>抽一張命運卡牌</span><em></em></div>
+        </div>
       </div>
     </div>
     <div class="item">
