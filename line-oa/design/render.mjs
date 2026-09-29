@@ -8,7 +8,11 @@ const require = createRequire(import.meta.url);
 const { chromium } = require(path.join(execSync('npm root -g').toString().trim(), 'playwright'));
 
 const dir = path.dirname(fileURLToPath(import.meta.url));
-const pages = { poster: [1080, 1350], price: [1080, 1350], avatar: [640, 640], cover: [1080, 878], game: [1080, 1350] };
+// [寬, 高, 頁面檔（預設同名 .html）, 輸出倍率]
+const pages = {
+  poster: [1080, 1350], price: [1080, 1350], avatar: [640, 640], cover: [1080, 878], game: [1080, 1350],
+  'game-a4': [1080, 1528, 'game.html?print', 2480 / 1080], // 白底 A4 列印版，輸出 2480×3508（300dpi）
+};
 const want = process.argv.slice(2).length ? process.argv.slice(2) : Object.keys(pages);
 
 const browser = await chromium.launch();
@@ -26,10 +30,10 @@ async function useNodeFonts(page) {
   });
 }
 for (const name of want) {
-  const [width, height] = pages[name];
-  const page = await browser.newPage({ viewport: { width, height }, deviceScaleFactor: 1 });
+  const [width, height, file = name + '.html', scale = 1] = pages[name];
+  const page = await browser.newPage({ viewport: { width, height }, deviceScaleFactor: scale });
   await useNodeFonts(page);
-  await page.goto('file://' + path.join(dir, name + '.html'), { waitUntil: 'networkidle' });
+  await page.goto('file://' + path.join(dir, file), { waitUntil: 'networkidle' });
   // 中文字體依 unicode-range 分片下載，逐一觸發頁面上實際用到的字
   await page.evaluate(async () => {
     const text = document.body.innerText + document.querySelector('svg')?.textContent;

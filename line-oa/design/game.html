@@ -4,19 +4,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:wght@300;400;500;700;900&family=Bodoni+Moda:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
 /* 字體沿用主宣傳圖：中文昭源宋體，英文與數字 Bodoni Moda
-   字級：標題 64 ／ 編號 56 ／ QR 標語 48 ／ 玩法名稱 38 ／ 說明 24・26 ／ 小字 22 */
-.canvas{width:1080px;height:1350px;font-family:'Bodoni Moda','Chiron Sung HK',serif}
-.canvas .vane-branch{font-family:'Chiron Sung HK',serif}
-.canvas .compass-labels text{font-family:'Bodoni Moda',serif;font-weight:600;font-size:15px}
-.head{position:absolute;top:84px;left:0;right:0;text-align:center}
-.icon{width:150px;height:180px;margin:0 auto 4px}
+   字級：標題 64 ／ 編號 56 ／ QR 標語 48 ／ 玩法名稱 38 ／ 說明 24・26 ／ 小字 22
+   版面：直向 flex，網頁版 1080×1350；加 ?print 為白底 A4（1080×1528，輸出 2480×3508） */
+.canvas{width:1080px;height:1350px;font-family:'Bodoni Moda','Chiron Sung HK',serif;
+  display:flex;flex-direction:column;align-items:center;padding:84px 100px 64px}
+.head{text-align:center}
 .head h1{font-weight:900;font-size:64px;letter-spacing:.2em;padding-left:.2em}
 .head p{margin-top:10px;font-size:22px;font-weight:500;letter-spacing:.3em;padding-left:.3em;color:var(--violet-lt)}
-.list{position:absolute;left:100px;right:100px;top:260px;display:flex;flex-direction:column;gap:22px}
-.item{position:relative;display:flex;gap:32px;padding:28px 40px 26px;
-  border:1px solid rgba(227,191,115,.4);background:linear-gradient(160deg,rgba(139,108,255,.13),rgba(20,15,42,.5) 60%)}
+.head p span{letter-spacing:.04em}
+.list{width:100%;margin-top:44px;display:flex;flex-direction:column;gap:22px}
+.item{position:relative;display:flex;gap:32px;padding:28px 44px 26px;
+  border:1px solid var(--card-line);background:var(--card-bg)}
 .item::before{content:"";position:absolute;left:-1px;top:-1px;width:56px;height:3px;background:var(--gold)}
 .num{flex:none;width:72px;font-weight:600;font-size:56px;line-height:1}
+.body{flex:1}
 .body h2{font-size:38px;font-weight:700;letter-spacing:.12em;line-height:1.2}
 .body p{margin-top:12px;font-size:24px;line-height:1.7;letter-spacing:.06em;color:var(--ink)}
 .body .need{margin-top:12px;font-size:22px;letter-spacing:.06em;color:var(--gold)}
@@ -25,22 +26,33 @@
 .prizes div{display:grid;grid-template-columns:150px 1fr auto;align-items:baseline;gap:16px;font-size:22px;letter-spacing:.06em}
 .prizes b{font-weight:700;color:var(--gold)}
 .prizes em{font-style:normal;color:var(--ink-mid)}
-.qrbar{position:absolute;left:100px;right:100px;bottom:64px;display:flex;align-items:center;gap:44px}
-.qr{flex:none;width:236px;height:236px;padding:12px;background:#fff;border-radius:10px;box-shadow:0 0 0 1px rgba(227,191,115,.6),0 0 40px rgba(227,191,115,.25)}
+.qrbar{margin-top:auto;display:flex;align-items:center;justify-content:center;gap:48px}
+.qr{flex:none;width:236px;height:236px;padding:12px;background:#fff;border-radius:10px;box-shadow:var(--qr-shadow)}
 .qr img{width:100%;height:100%;display:block}
 .qrtext h2{font-size:48px;font-weight:900;letter-spacing:.12em;line-height:1.2}
 .qrtext p{margin-top:14px;font-size:26px;font-weight:500;letter-spacing:.14em;color:var(--ink)}
 .qrtext small{display:block;margin-top:12px;font-size:22px;font-weight:500;letter-spacing:.2em;color:var(--gold)}
-.foot{position:absolute;left:70px;right:70px;bottom:70px;display:flex;justify-content:space-between;align-items:baseline}
-.foot div{font-size:22px;font-weight:500;letter-spacing:.2em;color:var(--gold)}
-</style></head>
+:root{--card-line:rgba(227,191,115,.4);--card-bg:linear-gradient(160deg,rgba(139,108,255,.13),rgba(20,15,42,.5) 60%);
+  --qr-shadow:0 0 0 1px rgba(227,191,115,.6),0 0 40px rgba(227,191,115,.25)}
+/* 白底列印版 */
+html.print,html.print body{background:#fff}
+.print{--ink:#1c1726;--ink-mid:#5a5366;--violet-lt:#5b4a9e;--gold-lt:#c9a24e;--gold:#9a7518;--gold-dk:#6e5210;
+  --card-line:rgba(154,117,24,.45);--card-bg:#faf7f0;--qr-shadow:0 0 0 1.5px rgba(154,117,24,.7)}
+.print .canvas{height:1528px;background:#fff;color:var(--ink);padding:110px 100px 96px}
+.print .canvas::before,.print .stars{display:none}
+.print .frame{border-color:rgba(154,117,24,.45)}
+.print .list{margin-top:60px;gap:30px}
+.print .item{padding:34px 44px 32px}
+</style>
+<script>if (location.search.includes('print')) document.documentElement.classList.add('print');</script>
+</head>
 <body>
 <div class="canvas">
   <div class="stars" style="position:absolute;inset:0" data-seed="31" data-dipper="0"></div>
   <div class="frame"></div>
   <div class="head">
     <h1 class="gold-text">攤位互動</h1>
-    <p>欽天門紫微斗數・愛瑞卡 <span style="letter-spacing:.04em">Erica</span></p>
+    <p>欽天門紫微斗數・愛瑞卡 <span>Erica</span></p>
   </div>
   <div class="list">
     <div class="item">
@@ -76,9 +88,9 @@
     <div class="qrtext">
       <h2 class="gold-text">掃我加入 LINE</h2>
       <p>抽命運一番賞・預約命理諮詢</p>
-      <small>真人一對一解盤，非 AI</small>
+      <small>真人一對一解盤</small>
     </div>
   </div>
 </div>
-<script src="stars.js"></script><script src="vane.js"></script>
+<script src="stars.js"></script>
 </body></html>
