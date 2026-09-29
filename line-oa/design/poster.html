@@ -1,29 +1,25 @@
 <!doctype html>
 <html lang="zh-Hant"><head><meta charset="utf-8"><title>宣傳海報</title>
 <link rel="stylesheet" href="common.css">
-<link href="https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:wght@300;400;500;700;900&family=Bodoni+Moda:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-/* 海報中文全用昭源宋體 */
-.canvas,.canvas .headline,.canvas .name,.canvas .foot{font-family:'Chiron Sung HK',serif}
+/* 字體：中文一律昭源宋體（Chiron Sung HK），英文一律 Bodoni Moda
+   字級：標題 84 ／ 名字 44 ／ 副標・頭銜 26 ／ 底部 22 ／ 圓盤標示 15 */
+.canvas{width:1080px;height:1350px;font-family:'Bodoni Moda','Chiron Sung HK',serif}
 .canvas .vane-branch{font-family:'Chiron Sung HK',serif}
-.canvas{width:1080px;height:1350px}
-.top{position:absolute;top:86px;left:0;right:0;display:flex;align-items:center;justify-content:center;gap:22px;
-  font-family:'Noto Serif TC',serif;font-size:22px;letter-spacing:.5em;color:var(--violet-lt)}
-.top::before,.top::after{content:"";width:56px;height:1px;background:var(--gold);opacity:.6}
-.top span{padding-left:.5em}
+.canvas .compass-labels text{font-family:'Bodoni Moda',serif;font-weight:600;font-size:15px}
 .vane{position:absolute;left:50%;top:170px;width:640px;height:768px;transform:translateX(-50%)}
 .copy{position:absolute;left:0;right:0;top:930px;text-align:center}
-.headline{font-family:'Noto Serif TC',serif;font-weight:900;font-size:84px;letter-spacing:.14em;line-height:1.2;padding-left:.14em}
-.gap{display:inline-block;width:.45em}
-.sub{margin-top:22px;font-size:25px;letter-spacing:.28em;color:var(--ink-mid);font-weight:300;padding-left:.28em}
-.name{margin-top:46px;display:inline-flex;align-items:center;gap:26px;font-family:'Noto Serif TC',serif}
-.name b{font-size:44px;font-weight:700;letter-spacing:.16em}
-.name em{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:64px;line-height:1;letter-spacing:.02em;color:var(--ink);margin-left:-8px}
-.name i{font-style:normal;width:1px;height:38px;background:var(--gold);opacity:.6}
-.name span{font-size:24px;letter-spacing:.3em;color:var(--violet-lt)}
-.foot{position:absolute;left:70px;right:70px;bottom:70px;display:flex;justify-content:space-between;align-items:flex-end;
-  font-family:'Noto Sans TC',sans-serif;font-size:22px;letter-spacing:.2em;font-weight:500}
-.foot .real,.foot .cta{color:var(--gold)}
+.headline{font-weight:900;font-size:84px;letter-spacing:.14em;line-height:1.2;padding-left:.14em}
+.sub{margin-top:22px;font-size:26px;font-weight:400;letter-spacing:.28em;padding-left:.28em;color:var(--ink-mid)}
+.name{margin-top:46px;display:inline-flex;align-items:center;gap:26px}
+.name b,.name em{font-size:44px;font-weight:700;color:var(--ink)}
+.name b{letter-spacing:.16em}
+.name em{font-style:normal;font-weight:600;letter-spacing:.02em;margin-left:-8px}
+.name i{width:1px;height:38px;background:var(--gold);opacity:.6}
+.name span{font-size:26px;font-weight:400;letter-spacing:.3em;color:var(--violet-lt)}
+.foot{position:absolute;left:70px;right:70px;bottom:70px;display:flex;justify-content:space-between;align-items:baseline}
+.foot div{font-size:22px;font-weight:500;letter-spacing:.2em;color:var(--gold)}
 </style></head>
 <body>
 <div class="canvas">
