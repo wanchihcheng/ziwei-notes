@@ -8,7 +8,7 @@ const require = createRequire(import.meta.url);
 const { chromium } = require(path.join(execSync('npm root -g').toString().trim(), 'playwright'));
 
 const dir = path.dirname(fileURLToPath(import.meta.url));
-const pages = { poster: [1080, 1350], price: [1080, 1350], avatar: [640, 640], cover: [1080, 878] };
+const pages = { poster: [1080, 1350], price: [1080, 1350], avatar: [640, 640], cover: [1080, 878], game: [1080, 1350] };
 const want = process.argv.slice(2).length ? process.argv.slice(2) : Object.keys(pages);
 
 const browser = await chromium.launch();
