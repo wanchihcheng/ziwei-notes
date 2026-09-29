@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><title>價目表</title>
+<link rel="stylesheet" href="common.css">
+<style>
+.canvas{width:1080px;height:1350px}
+.head{position:absolute;top:96px;left:0;right:0;text-align:center}
+.icon{width:150px;height:185px;margin:0 auto 14px}
+.head .eyebrow{font-size:16px}
+.head h1{font-family:'Noto Serif TC',serif;font-weight:900;font-size:64px;letter-spacing:.3em;padding-left:.3em;margin-top:16px}
+.card{position:absolute;left:110px;right:110px;top:450px;padding:48px 56px 44px;
+  border:1px solid rgba(227,191,115,.45);background:linear-gradient(160deg,rgba(139,108,255,.14),rgba(20,15,42,.55) 60%);
+  box-shadow:0 0 60px rgba(139,108,255,.18) inset}
+.card::before{content:"";position:absolute;left:-1px;top:-1px;width:64px;height:3px;background:var(--gold)}
+.svc{display:flex;justify-content:space-between;align-items:flex-end;gap:24px}
+.svc h2{font-family:'Noto Serif TC',serif;font-size:40px;font-weight:700;letter-spacing:.12em;line-height:1.35}
+.svc h2 small{display:block;font-family:'Noto Sans TC',sans-serif;font-size:21px;font-weight:400;letter-spacing:.3em;color:var(--violet-lt);margin-bottom:6px}
+.price{text-align:right;white-space:nowrap}
+.price .dur{font-family:'Space Grotesk',sans-serif;font-size:20px;letter-spacing:.25em;color:var(--ink-mid)}
+.price .amt{font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:78px;line-height:1;letter-spacing:.02em}
+.price .amt em{font-style:normal;font-size:28px;margin-right:6px;letter-spacing:.1em}
+.divider{height:1px;background:linear-gradient(90deg,var(--gold),rgba(227,191,115,0));margin:34px 0 28px;opacity:.6}
+ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:14px 30px}
+li{font-size:24px;letter-spacing:.08em;color:var(--ink);display:flex;gap:14px;align-items:baseline}
+li::before{content:"";flex:none;width:8px;height:8px;transform:rotate(45deg) translateY(-3px);background:var(--gold)}
+li.full{grid-column:1/-1}
+.notes{position:absolute;left:110px;right:110px;top:900px}
+.notes h3{font-family:'Syncopate',sans-serif;font-size:15px;letter-spacing:.4em;color:var(--violet-lt);margin-bottom:16px}
+.notes p{font-size:21px;line-height:1.85;color:var(--ink-mid);letter-spacing:.06em}
+.notes b{color:var(--gold);font-weight:500}
+.foot{position:absolute;left:70px;right:70px;bottom:70px;display:flex;justify-content:space-between;align-items:flex-end;font-family:'Space Grotesk',sans-serif;font-size:15px;letter-spacing:.3em;color:var(--ink-lt)}
+.foot .cta{font-family:'Noto Sans TC',sans-serif;font-size:22px;letter-spacing:.2em;color:var(--gold);font-weight:500}
+</style></head>
+<body>
+<div class="canvas">
+  <div class="stars" style="position:absolute;inset:0" data-seed="23"></div>
+  <div class="frame"></div>
+  <div class="head">
+    <div class="icon" data-vane></div>
+    <div class="eyebrow">Service Menu</div>
+    <h1 class="gold-text">價目表</h1>
+  </div>
+  <div class="card">
+    <div class="svc">
+      <h2><small>紫微斗數</small>一對一命盤解讀</h2>
+      <div class="price"><div class="dur">60 MIN</div><div class="amt gold-text"><em>NT$</em>3,000</div></div>
+    </div>
+    <div class="divider"></div>
+    <ul>
+      <li>個性、天賦與盲點</li>
+      <li>事業方向與財運</li>
+      <li>感情與人際關係</li>
+      <li>今年流年運勢</li>
+      <li class="full">現場提問：你最在意的那件事</li>
+    </ul>
+  </div>
+  <div class="notes">
+    <h3>BOOKING</h3>
+    <p>・採預約制，請透過 <b>LINE</b> 私訊預約時段<br>
+       ・請提供：<b>國曆生日、出生時間、性別、出生地</b><br>
+       ・面對面或線上視訊皆可｜改期請於 24 小時前告知</p>
+  </div>
+  <div class="foot"><div>鄭菀之 · 紫微斗數</div><div class="cta">加入 LINE 立即預約</div></div>
+</div>
+<script src="stars.js"></script><script src="vane.js"></script>
+</body></html>

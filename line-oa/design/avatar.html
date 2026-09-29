@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><title>LINE 大頭貼</title>
+<link rel="stylesheet" href="common.css">
+<style>
+.canvas{width:640px;height:640px;background:radial-gradient(circle at 50% 48%,#2a1f63 0%,#140f33 55%,#0b0918 100%)}
+.canvas::before{display:none}
+.compass,.compass-labels{display:none}
+/* 地支環中心 (300,300) 對齊畫布中心 */
+.vane{position:absolute;left:50%;top:calc(320px - 300px * 1.0);width:600px;height:740px;transform:translateX(-50%)}
+</style></head>
+<body>
+<div class="canvas">
+  <div class="vane" data-vane></div>
+</div>
+<script src="vane.js"></script>
+</body></html>

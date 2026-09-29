@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><title>宣傳海報</title>
+<link rel="stylesheet" href="common.css">
+<style>
+.canvas{width:1080px;height:1350px}
+.top{position:absolute;top:92px;left:0;right:0;text-align:center}
+.top .eyebrow{font-size:17px}
+.top .rule{width:64px;height:1px;background:var(--gold);margin:22px auto 0;opacity:.7}
+.vane{position:absolute;left:50%;top:160px;width:620px;height:765px;transform:translateX(-50%)}
+.copy{position:absolute;left:0;right:0;top:930px;text-align:center}
+.headline{font-family:'Noto Serif TC',serif;font-weight:900;font-size:86px;letter-spacing:.14em;line-height:1.15;padding-left:.14em}
+.sub{margin-top:22px;font-size:25px;letter-spacing:.32em;color:var(--ink-mid);font-weight:300;padding-left:.32em}
+.name{margin-top:48px;display:inline-flex;align-items:center;gap:26px;font-family:'Noto Serif TC',serif}
+.name b{font-size:44px;font-weight:700;letter-spacing:.2em}
+.name i{font-style:normal;width:1px;height:38px;background:var(--gold);opacity:.6}
+.name span{font-size:24px;letter-spacing:.3em;color:var(--violet-lt)}
+.foot{position:absolute;left:70px;right:70px;bottom:70px;display:flex;justify-content:space-between;align-items:flex-end;font-family:'Space Grotesk',sans-serif;font-size:15px;letter-spacing:.3em;color:var(--ink-lt)}
+.foot .cta{font-family:'Noto Sans TC',sans-serif;font-size:22px;letter-spacing:.2em;color:var(--gold);font-weight:500}
+</style></head>
+<body>
+<div class="canvas">
+  <div class="stars" style="position:absolute;inset:0" data-seed="11"></div>
+  <div class="frame"></div>
+  <div class="top"><div class="eyebrow">Zi Wei Dou Shu</div><div class="rule"></div></div>
+  <div class="vane" data-vane></div>
+  <div class="copy">
+    <div class="headline gold-text">看懂風向</div>
+    <div class="sub">命盤是風向・選擇在你</div>
+    <div class="name"><b>鄭菀之</b><i></i><span>紫微斗數命理師</span></div>
+  </div>
+  <div class="foot"><div>CHART · READING</div><div class="cta">一對一命盤解讀｜LINE 預約</div></div>
+</div>
+<script src="stars.js"></script><script src="vane.js"></script>
+</body></html>

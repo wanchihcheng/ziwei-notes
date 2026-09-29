@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;900&family=Noto+Sans+TC:wght@300;400;500&family=Syncopate:wght@400;700&family=Space+Grotesk:wght@300;400;500&display=swap');
+:root{
+  --bg:#0b0918; --bg2:#151033;
+  --violet:#8b6cff; --violet-lt:#cdb8ff;
+  --gold:#e3bf73; --gold-lt:#fff1c9; --gold-dk:#a8792a;
+  --ink:#f4efe5; --ink-mid:#c9c2d9; --ink-lt:#8a82a3;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:var(--bg)}
+body{color:var(--ink);font-family:'Noto Sans TC',sans-serif;-webkit-font-smoothing:antialiased}
+.canvas{position:relative;overflow:hidden;
+  background:
+    radial-gradient(ellipse 70% 45% at 50% 38%, rgba(139,108,255,.32), transparent 70%),
+    radial-gradient(ellipse 60% 40% at 85% 95%, rgba(227,191,115,.12), transparent 70%),
+    linear-gradient(180deg,var(--bg2) 0%,var(--bg) 60%);
+}
+.canvas::before{content:"";position:absolute;inset:0;
+  background-image:
+    linear-gradient(rgba(205,184,255,.05) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(205,184,255,.05) 1px,transparent 1px);
+  background-size:54px 54px;
+  mask-image:radial-gradient(ellipse 80% 70% at 50% 40%,#000 30%,transparent 80%);
+}
+.stars{position:absolute;inset:0;pointer-events:none}
+.frame{position:absolute;inset:28px;border:1px solid rgba(227,191,115,.28);pointer-events:none}
+.frame::before,.frame::after{content:"";position:absolute;width:22px;height:22px;border:2px solid var(--gold)}
+.frame::before{top:-2px;left:-2px;border-right:none;border-bottom:none}
+.frame::after{bottom:-2px;right:-2px;border-left:none;border-top:none}
+.eyebrow{font-family:'Syncopate',sans-serif;font-weight:700;letter-spacing:.42em;color:var(--violet-lt);text-transform:uppercase}
+.serif{font-family:'Noto Serif TC',serif}
+.gold-text{background:linear-gradient(135deg,var(--gold-lt),var(--gold) 50%,var(--gold-dk));-webkit-background-clip:text;background-clip:text;color:transparent}
+.vane-svg{width:100%;height:100%;display:block}
+.vane-branch{font-family:'Noto Serif TC',serif;font-size:15px;fill:var(--violet-lt);opacity:.75}
+.compass-labels text{font-family:'Syncopate',sans-serif;font-weight:700;font-size:15px;fill:var(--gold)}
+.mono{font-family:'Space Grotesk',sans-serif}
