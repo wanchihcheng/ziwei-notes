@@ -32,7 +32,7 @@
     return { lines, labels };
   }
 
-  // 北斗七星：斗柄沿翅膀，斗身落在身體
+  // 北斗七星亮星：斗柄沿翅膀，斗身落在身體（不另連線，沿用摺紙切面線條）
   const DIPPER = [
     ['搖光', 236, 110, 3.2],
     ['開陽', 272, 141, 3.6],
@@ -43,8 +43,7 @@
     ['天樞', 414, 233, 4.2],
   ];
   function dipper() {
-    const p = n => DIPPER[n].slice(1, 3).join(' ');
-    let s = `<path d="M${p(0)} L${p(1)} L${p(2)} L${p(3)} L${p(4)} L${p(5)} L${p(6)} L${p(3)}" fill="none" stroke="#2a1a55" stroke-width="1.6" stroke-linejoin="round" opacity=".7"/>`;
+    let s = '';
     DIPPER.forEach(([, x, y, r]) => {
       s += `<circle cx="${x}" cy="${y}" r="${r * 2.4}" fill="url(#starGlow)"/>`;
       s += `<path d="M${x - r * 2.2} ${y} L${x + r * 2.2} ${y} M${x} ${y - r * 2.2} L${x} ${y + r * 2.2}" stroke="#fff" stroke-width=".8" opacity=".8"/>`;
@@ -71,7 +70,7 @@
         L 292 272
         C 340 280, 408 272, 440 248
         Z"/>
-      <g stroke="#fff6dc" stroke-width="1" opacity=".4" fill="none">
+      <g stroke="#fff6dc" stroke-width="1" opacity=".55" fill="none">
         <path d="M396 222 L330 232 L440 248"/>
         <path d="M300 132 L330 232"/>
         <path d="M262 150 L396 222"/>
