@@ -1,22 +1,36 @@
 <!doctype html>
 <html lang="zh-Hant"><head><meta charset="utf-8"><title>LINE 封面</title>
 <link rel="stylesheet" href="common.css">
+<link href="https://fonts.googleapis.com/css2?family=Chiron+Sung+HK:wght@300;400;500;700;900&family=Bodoni+Moda:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-.canvas{width:1080px;height:878px}
-.vane{position:absolute;right:-20px;top:40px;width:560px;height:690px;opacity:.95}
-.copy{position:absolute;left:90px;top:230px}
-.copy .eyebrow{font-size:15px}
-.copy h1{font-family:'Noto Serif TC',serif;font-weight:900;font-size:78px;letter-spacing:.12em;line-height:1.3;margin-top:26px}
-.copy p{margin-top:26px;font-size:24px;letter-spacing:.3em;color:var(--ink-mid);font-weight:300}
+/* 字體沿用主宣傳圖：中文昭源宋體，英文 Bodoni Moda
+   字級：標題 70 ／ 名字 36 ／ 副標・頭銜 26 ／ 小標 22
+   LINE 主頁的大頭貼會蓋在封面下方中間，重要內容放在上半部 */
+.canvas{width:1080px;height:878px;font-family:'Bodoni Moda','Chiron Sung HK',serif}
+.canvas .vane-branch{font-family:'Chiron Sung HK',serif}
+.canvas .compass-labels text{font-family:'Bodoni Moda',serif;font-weight:600;font-size:15px}
+.vane{position:absolute;right:0;top:60px;width:470px;height:564px}
+.copy{position:absolute;left:90px;top:170px}
+.kicker{display:flex;align-items:center;gap:16px;font-size:22px;font-weight:500;letter-spacing:.3em;color:var(--violet-lt)}
+.kicker::before{content:"";width:40px;height:1px;background:var(--gold);opacity:.7}
+.copy h1{font-weight:900;font-size:70px;letter-spacing:.1em;line-height:1.25;margin-top:26px}
+.sub{margin-top:18px;font-size:26px;font-weight:400;letter-spacing:.28em;color:var(--ink-mid)}
+.name{margin-top:44px;display:flex;align-items:center;gap:20px}
+.name b,.name em{font-size:36px;font-weight:700;color:var(--ink)}
+.name b{letter-spacing:.16em}
+.name em{font-style:normal;font-weight:600;letter-spacing:.02em;margin-left:-6px}
+.tag{margin-top:18px;font-size:22px;font-weight:500;letter-spacing:.2em;color:var(--gold)}
 </style></head>
 <body>
 <div class="canvas">
-  <div class="stars" style="position:absolute;inset:0" data-seed="5"></div>
-  <div class="vane" data-vane></div>
+  <div class="stars" style="position:absolute;inset:0" data-seed="5" data-dipper="0"></div>
+  <div class="vane" data-vane="classic"></div>
   <div class="copy">
-    <div class="eyebrow">Zi Wei Dou Shu</div>
-    <h1 class="gold-text">看懂風向<br>走對方向</h1>
-    <p>紫微斗數・一對一命盤解讀</p>
+    <div class="kicker">欽天門紫微斗數</div>
+    <h1 class="gold-text">洞察命運風向</h1>
+    <div class="sub">陪你走過每個岔路口</div>
+    <div class="name"><b>愛瑞卡</b><em>Erica</em></div>
+    <div class="tag">真人一對一・線上解盤</div>
   </div>
 </div>
 <script src="stars.js"></script><script src="vane.js"></script>
